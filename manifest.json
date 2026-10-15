@@ -1,43 +1,33 @@
 [
   {
+    "path": "data/compact_configurations.csv",
+    "bytes": 4336,
+    "sha256": "839176c43a6aeb0e8f749a955e7f6d8e3ea9e74142de055eaec4920222df4488"
+  },
+  {
+    "path": "data/scale_effects.csv",
+    "bytes": 17659,
+    "sha256": "8256f65b673e303d8b00d978ef010aab6ffa9027171b5ac515c8a12d8e540ff6"
+  },
+  {
     "path": "DATA_DICTIONARY.txt",
     "bytes": 2156,
     "sha256": "525f5c98bff25c80171b1ccd803c6752e08b87dc1b73e053ae716ce09d62da25"
   },
   {
-    "path": "README.txt",
-    "bytes": 4029,
-    "sha256": "3590927c1bdd6260be9369aa9fdca82e66378ea61175c9ea8cdea96496a0d481"
-  },
-  {
-    "path": "RIGHTS.txt",
-    "bytes": 505,
-    "sha256": "88faa8088cdb7c69966090bb3797af7db45651d5ea93b998b7075334c0ed0f29"
-  },
-  {
-    "path": "data/compact_configurations.csv",
-    "bytes": 4304,
-    "sha256": "d690e655ea5690813552a30ab11e0163c3140a80f17fd89f284a2038295b0147"
-  },
-  {
-    "path": "data/scale_effects.csv",
-    "bytes": 16228,
-    "sha256": "9b58c1193fc8742aa02b266e4734a90b9ddc3ee4dd874986e29631f390f78568"
-  },
-  {
     "path": "metadata/additional_evidence.json",
-    "bytes": 9112,
-    "sha256": "74ee4b8df3decdb231864281050a2a91ffb5453396af3d9f7556e93bd01ccde2"
+    "bytes": 14098,
+    "sha256": "701f646e4085881edb3fa9d3edd0338057f03c82ce4b4dca0f9f71b7c65be582"
   },
   {
     "path": "metadata/core_evidence.json",
-    "bytes": 72973,
-    "sha256": "2241ae67bff5b7cf685741ced4ed8208b1d5cd5d4d88ac3d6dea41161d354667"
+    "bytes": 74404,
+    "sha256": "eb7963d33042da0f94e0a7cf1ae7f9326e70b384a6f86040cb0867fcbeba7f5b"
   },
   {
     "path": "metadata/reference_renumbering.json",
-    "bytes": 25543,
-    "sha256": "d4c9db06ad0bae367a5cde1cb62d8c677104607fd539669ff25fbb1fe3e7c971"
+    "bytes": 25531,
+    "sha256": "dbb0c79db3a17423100dff638e132a4c7ccbc11dc0a6a6217c412abc16348310"
   },
   {
     "path": "metadata/source_manifest.json",
@@ -45,8 +35,18 @@
     "sha256": "dc9162cff4b1214bb65277a66f4b9c25e3ddee6c0dd221df1084f587b7d88c18"
   },
   {
+    "path": "README.txt",
+    "bytes": 2886,
+    "sha256": "91d3f323bf82f7beed6963bddf8ccca0036bf21eda079fbab648a7b8283b3077"
+  },
+  {
+    "path": "RIGHTS.txt",
+    "bytes": 505,
+    "sha256": "88faa8088cdb7c69966090bb3797af7db45651d5ea93b998b7075334c0ed0f29"
+  },
+  {
     "path": "scripts/validate_evidence.py",
-    "bytes": 3207,
-    "sha256": "3f13f2681f0d1501c88a9b9c210fd791ff2f032f1c3bc2598c49d7ba959c89cf"
+    "bytes": 3407,
+    "sha256": "0222b0a00aa5a4a6e8bd7900d94b5d79c8f821b5d7bca074069dfb745def2108"
   }
 ]

@@ -34,6 +34,8 @@ extra=json.loads((root/'metadata/additional_evidence.json').read_text(encoding='
 assert extra['RASAT']['SParC']['dev_PICARD_QEM_IEM_QEX_IEX']==[67.7,49.1,73.3,54]
 assert extra['data_amount_and_cost']['OmniSQL']['derived_student_GPU_hours']==[8*24*d for d in [6,12,20]]
 assert extra['data_amount_and_cost']['OmniSQL']['synthesis_GPU_hours'] is None
+assert extra['editorial_review_source_checks']['MetaTool_provenance']['official_Spider2_task_mapping_verified'] is False
+assert extra['editorial_review_source_checks']['Graphix_DB_content'] is True
 manifest=json.loads((root/'manifest.json').read_text(encoding='utf-8'))
 allowed={x['path'] for x in manifest}|{'manifest.json'}
 actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and '.git' not in p.relative_to(root).parts}

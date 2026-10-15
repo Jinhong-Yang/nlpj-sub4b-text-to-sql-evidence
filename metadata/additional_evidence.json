@@ -162,7 +162,7 @@
         72.4
       ]
     },
-    "conditions": "Published T5 baseline, same PICARD status; no verified equal beam/compute; generator nominal 3B plus graph layers, exact total NR",
+    "conditions": "DB content confirmed by released configs; beams 1/4 without/with PICARD in pinned settings; exact reconstruction of Table 1 not verified",
     "source_issue": "Table 4 overall T5-3B EM 71.6 versus Table 1 71.5; main extraction consistently uses Table 1"
   },
   "RASAT": {
@@ -330,8 +330,126 @@
       "few_shot_Llama3_2_3B_SR": 62,
       "with_documentation_SR": 64,
       "official_full_SQLite_Lite_result": false,
-      "reason": "Selected enterprise tasks; task-ID/version mapping to full official SQLite/Lite not established by checked PDF"
+      "reason": "Paper/released-code task provenance unresolved; loader and released file use legacy Spider; official task mapping unverified",
+      "paper_selected_enterprise_claim": true,
+      "verified_official_Spider2_evidence": false
     },
     "conclusion": "No verified sub-4B full official SQLite/Lite score within this stated scope; selected 50-task result reported separately"
+  },
+  "editorial_review_source_checks": {
+    "date": "2026-10-15",
+    "repository_versions": {
+      "MetaTool": {
+        "repository": "techsachinkr/Meta-Tool",
+        "commit": "5724ac70821ac451c9b75f4699aa08c0cc2c5dd8",
+        "date": "2026-07-03T19:25:14Z"
+      },
+      "Graphix": {
+        "repository": "AlibabaResearch/DAMO-ConvAI",
+        "commit": "188835d4f9948563a6b9c8ac50cd0f3ae4021ed6",
+        "date": "2026-09-15T07:18:45Z"
+      }
+    },
+    "repository_artifacts": [
+      {
+        "id": "metatool_readme",
+        "url": "https://raw.githubusercontent.com/techsachinkr/Meta-Tool/main/README.md",
+        "sha256": "9c95e9dbc601633bc39ec9ecaa576d3a76fc76dc7353d6cfb06e034239570b49",
+        "bytes": 7416
+      },
+      {
+        "id": "metatool_tasks",
+        "url": "https://raw.githubusercontent.com/techsachinkr/Meta-Tool/main/data/spider2/spider2_tasks.json",
+        "sha256": "14d3c9c3bef760642a4c3db5242f71a0182c472cc6f3e9591a670af14281b1d6",
+        "bytes": 289080
+      },
+      {
+        "id": "metatool_loader",
+        "url": "https://raw.githubusercontent.com/techsachinkr/Meta-Tool/main/data_loader.py",
+        "sha256": "d7c602809854d8c2abf5514864bd5e3a1ecec53271f845ce8fe5432b6256d9e6",
+        "bytes": 97201
+      },
+      {
+        "id": "metatool_download",
+        "url": "https://raw.githubusercontent.com/techsachinkr/Meta-Tool/main/download_real_benchmarks.py",
+        "sha256": "21517a34b3d36cfe5393038083febaee69b45b7495a1f6d5574cb51cd60c1a05",
+        "bytes": 12667
+      },
+      {
+        "id": "graphix_config",
+        "url": "https://raw.githubusercontent.com/AlibabaResearch/DAMO-ConvAI/main/graphix/configs/train.json",
+        "sha256": "f2fefb9734b4455c9365e3f5148ddbea1022a03d33818f70e8b10fead28b0051",
+        "bytes": 1364
+      },
+      {
+        "id": "graphix_args",
+        "url": "https://raw.githubusercontent.com/AlibabaResearch/DAMO-ConvAI/main/graphix/train_data/combined_args.json",
+        "sha256": "bba55e1595dcc81ecead3fcd05f9bffb2b1ebb3b0160a46187b29aaeb3c5a0d3",
+        "bytes": 4635
+      },
+      {
+        "id": "graphix_eval",
+        "url": "https://raw.githubusercontent.com/AlibabaResearch/DAMO-ConvAI/main/graphix/dev_result/combined_args.json",
+        "sha256": "ffb2afd90ee5317491351c42e313d590fef589589ea4c409d2a838a7157c23e3",
+        "bytes": 4644
+      }
+    ],
+    "Graphix_DB_content": true,
+    "Graphix_released_config_beams": {
+      "no_PICARD": 1,
+      "with_PICARD": 4,
+      "exact_Table1_reconstruction_verified": false
+    },
+    "MetaTool_provenance": {
+      "paper_claim": "50 selected enterprise Spider2 tasks; 64 percent",
+      "released_loader": "Spider2Loader.setup loads legacy spider validation with alternative/synthetic fallbacks",
+      "released_file": "data/spider2/spider2_tasks.json starts with concert_singer legacy Spider questions",
+      "official_Spider2_task_mapping_verified": false,
+      "review_treatment": "Separate selected-task row; not verified Spider2 result; not comparable to official split scores"
+    },
+    "bibliography": {
+      "FINER": {
+        "doi": "10.1109/ICDE65706.2026.00183",
+        "proceedings_pages": "2448-2461",
+        "institution_source": "https://cris.technion.ac.il/en/publications/boosting-small-language-models-for-text-to-sql-with-fine-grained-/",
+        "publisher_deposited_pages": "1-14",
+        "source": "https://api.crossref.org/works/10.1109/ICDE65706.2026.00183",
+        "discrepancy_explicit": true
+      },
+      "MCTS": {
+        "volume": 40,
+        "issue": 41,
+        "pages": "34521-34529",
+        "doi": "10.1609/aaai.v40i41.40751",
+        "source": "https://ojs.aaai.org/index.php/AAAI/article/view/40751"
+      },
+      "LitE": {
+        "pages": "3593-3608",
+        "doi": "10.18653/v1/2026.findings-eacl.186",
+        "volume_issue": "not applicable: conference proceedings",
+        "source": "https://aclanthology.org/2026.findings-eacl.186/"
+      },
+      "MetaTool": {
+        "pages": "10132-10147",
+        "doi": "10.18653/v1/2026.findings-acl.492",
+        "volume_issue": "not applicable: conference proceedings",
+        "source": "https://aclanthology.org/2026.findings-acl.492/"
+      },
+      "XiYan": {
+        "volume": 38,
+        "issue": 4,
+        "pages": "2474-2487",
+        "doi": "10.1109/TKDE.2026.3657851",
+        "source": "https://doi.org/10.1109/TKDE.2026.3657851"
+      },
+      "Think2SQL": {
+        "year": 2026,
+        "venue": "TMLR",
+        "identifier": "NxU1KWnpOG",
+        "unverified_volume_issue_pages_DOI": null,
+        "author_institution_source": "https://www.eurecom.fr/en/publication/8640",
+        "official_persistent_record": "https://openreview.net/forum?id=NxU1KWnpOG"
+      }
+    }
   }
 }

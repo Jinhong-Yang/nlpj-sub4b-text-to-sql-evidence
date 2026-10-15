@@ -265,7 +265,7 @@
     "23": {
       "previous_release_number": null,
       "previous_working_id": null,
-      "entry": "S. Kumar, Meta-Tool: Efficient few-shot tool adaptation for small language models, in: Findings of the Association for Computational Linguistics: ACL 2026, 2026, pp. 10132--10147. \\url{https://aclanthology.org/2026.findings-acl.492/}.",
+      "entry": "S. Kumar, Meta-Tool: Efficient few-shot tool adaptation for small language models, in: Findings of the Association for Computational Linguistics: ACL 2026, 2026, pp. 10132--10147. doi:10.18653/v1/2026.findings-acl.492..",
       "new_primary_source": true
     },
     "24": {
@@ -349,7 +349,7 @@
     "37": {
       "previous_release_number": 33,
       "previous_working_id": 37,
-      "entry": "Y. Liu, Y. Zhu, Y. Gao, Z. Luo, X. Li, X. Shi, Y. Hong, J. Gao, Y. Li, B. Ding, J. Zhou, XiYan-SQL: A novel multi-generator framework for text-to-SQL, IEEE Transactions on Knowledge and Data Engineering 38 (2026) 2474--2487. doi:10.1109/TKDE.2026.3657851.",
+      "entry": "Y. Liu, Y. Zhu, Y. Gao, Z. Luo, X. Li, X. Shi, Y. Hong, J. Gao, Y. Li, B. Ding, J. Zhou, XiYan-SQL: A novel multi-generator framework for text-to-SQL, IEEE Transactions on Knowledge and Data Engineering 38 (4) (2026) 2474--2487. doi:10.1109/TKDE.2026.3657851.",
       "new_primary_source": false
     },
     "38": {

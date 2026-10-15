@@ -48,33 +48,33 @@ PICARD constrained decoding,T5-3B + DB content,spider_ex,74.4,79.3,4.9,False,21,
 PICARD constrained decoding,T5-3B + DB content,spider_em,71.5,75.5,4.0,False,21,"Table 1, PDF p5",Beam width 4; top-2 token predictions per hypothesis; parsing with guards; with DB content.
 PICARD constrained decoding,T5-3B,cosql_dev_qm,53.8,56.9,3.1,False,21,"Table 2, PDF p5","Beam 4, top2 tokens, dialog SQL state tracking; QM is exact-set match, not EX."
 PICARD constrained decoding,T5-3B,cosql_dev_im,21.8,24.2,2.4,False,21,"Table 2, PDF p5","Beam 4, top2 tokens; IM is joint interaction match, not EX."
-"Graphix relational layers, no PICARD",T5-Large,spider_em,67.0,72.7,5.7,False,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched
-"Graphix relational layers, no PICARD",T5-Large,spider_ex,69.3,75.9,6.6,True,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched
-"Graphix relational layers, with PICARD",T5-Large,spider_em,69.1,76.6,7.5,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation
-"Graphix relational layers, with PICARD",T5-Large,spider_ex,72.9,80.5,7.6,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation
-"Graphix relational layers, no PICARD",T5-3B,spider_em,71.5,75.6,4.1,False,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched
-"Graphix relational layers, no PICARD",T5-3B,spider_ex,74.4,78.2,3.8,True,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched
-"Graphix relational layers, with PICARD",T5-3B,spider_em,75.5,77.1,1.6,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation
-"Graphix relational layers, with PICARD",T5-3B,spider_ex,79.3,81.0,1.7,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation
-"Graphix relations, robustness",T5-3B,spider_syn_em,58,66.9,8.9,False,36,"Table 2, PDF p5","No training on robustness variants; EM, not EX"
-"Graphix relations, robustness",T5-3B,spider_dk_em,46.9,51.2,4.3,False,36,"Table 2, PDF p5","No training on robustness variants; EM, not EX"
-"Graphix relations, robustness",T5-3B,spider_realistic_em,62,72.4,10.4,False,36,"Table 2, PDF p5","No training on robustness variants; EM, not EX"
-"RASAT relational attention, no PICARD",T5-Small,spider_em,47.2,53,5.8,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-Small,spider_ex,47.8,53.7,5.9,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-Base,spider_em,57.2,60.4,3.2,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-Base,spider_ex,57.9,61.3,3.4,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-Large,spider_em,65.3,66.7,1.4,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-Large,spider_ex,67.2,69.2,2.0,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-3B,spider_em,71.5,72.6,1.1,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-"RASAT relational attention, no PICARD",T5-3B,spider_ex,74.4,76.6,2.2,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute
-RASAT plus PICARD,RASAT-3B,sparc_dev_qem,65,67.7,2.7,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,sparc_dev_iem,45.7,49.1,3.4,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,sparc_dev_qex,69.9,73.3,3.4,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,sparc_dev_iex,50.7,54,3.3,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,cosql_dev_qem,56.2,58.8,2.6,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,cosql_dev_iem,25.9,27,1.1,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,cosql_dev_qex,63.8,67,3.2,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
-RASAT plus PICARD,RASAT-3B,cosql_dev_iex,34.8,39.6,4.8,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX
+"Graphix relational layers, no PICARD",T5-Large,spider_em,67.0,72.7,5.7,False,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched; DB content included (primary PDF/released settings)
+"Graphix relational layers, no PICARD",T5-Large,spider_ex,69.3,75.9,6.6,True,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched; DB content included (primary PDF/released settings)
+"Graphix relational layers, with PICARD",T5-Large,spider_em,69.1,76.6,7.5,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation; DB content included (primary PDF/released settings)
+"Graphix relational layers, with PICARD",T5-Large,spider_ex,72.9,80.5,7.6,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation; DB content included (primary PDF/released settings)
+"Graphix relational layers, no PICARD",T5-3B,spider_em,71.5,75.6,4.1,False,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched; DB content included (primary PDF/released settings)
+"Graphix relational layers, no PICARD",T5-3B,spider_ex,74.4,78.2,3.8,True,36,"Table 1, PDF p5",Same metric/PICARD status; published T5 baseline; beam and total compute not matched; DB content included (primary PDF/released settings)
+"Graphix relational layers, with PICARD",T5-3B,spider_em,75.5,77.1,1.6,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation; DB content included (primary PDF/released settings)
+"Graphix relational layers, with PICARD",T5-3B,spider_ex,79.3,81.0,1.7,False,36,"Table 1, PDF p5",PICARD in both; beam/count NR; not a matched-compute causal ablation; DB content included (primary PDF/released settings)
+"Graphix relations, robustness",T5-3B,spider_syn_em,58,66.9,8.9,False,36,"Table 2, PDF p5","No training on robustness variants; EM, not EX; DB content included (primary PDF/released settings)"
+"Graphix relations, robustness",T5-3B,spider_dk_em,46.9,51.2,4.3,False,36,"Table 2, PDF p5","No training on robustness variants; EM, not EX; DB content included (primary PDF/released settings)"
+"Graphix relations, robustness",T5-3B,spider_realistic_em,62,72.4,10.4,False,36,"Table 2, PDF p5","No training on robustness variants; EM, not EX; DB content included (primary PDF/released settings)"
+"RASAT relational attention, no PICARD",T5-Small,spider_em,47.2,53,5.8,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-Small,spider_ex,47.8,53.7,5.9,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-Base,spider_em,57.2,60.4,3.2,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-Base,spider_ex,57.9,61.3,3.4,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-Large,spider_em,65.3,66.7,1.4,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-Large,spider_ex,67.2,69.2,2.0,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-3B,spider_em,71.5,72.6,1.1,False,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+"RASAT relational attention, no PICARD",T5-3B,spider_ex,74.4,76.6,2.2,True,20,"Table 8, PDF p8",Published T5 baseline; RASAT beam 8; no matched total compute; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,sparc_dev_qem,65,67.7,2.7,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,sparc_dev_iem,45.7,49.1,3.4,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,sparc_dev_qex,69.9,73.3,3.4,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,sparc_dev_iex,50.7,54,3.3,False,20,"Table 2, PDF p6",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,cosql_dev_qem,56.2,58.8,2.6,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,cosql_dev_iem,25.9,27,1.1,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,cosql_dev_qex,63.8,67,3.2,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
+RASAT plus PICARD,RASAT-3B,cosql_dev_iex,34.8,39.6,4.8,False,20,"Table 4, PDF p7",Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX; DB content included (primary PDF/released settings)
 MCTS search vs single-shot,Qwen2.5-Coder-1.5B,bird_ex,14.71,40.69,25.98,False,46,"Table 2, PDF p6","Full inference regime, more model/database calls; uncached search"
 MCTS search vs single-shot,Qwen2.5-Coder-3B,bird_ex,17.68,46.71,29.03,False,46,"Table 2, PDF p6","Full inference regime, more model/database calls; uncached search"
 SENSE strong-data SFT vs untuned,DeepSeek-Coder-1.3B,bird_ex,22,40.7,18.7,False,42,"Table 5, PDF p7","Strong-data SFT; data amount, coverage and training bundled"
