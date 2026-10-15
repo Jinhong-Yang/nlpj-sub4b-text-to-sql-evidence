@@ -26,8 +26,8 @@
   },
   {
     "path": "metadata/reference_renumbering.json",
-    "bytes": 25531,
-    "sha256": "dbb0c79db3a17423100dff638e132a4c7ccbc11dc0a6a6217c412abc16348310"
+    "bytes": 25532,
+    "sha256": "e25281e12013a938e39cf703b3e06a314b32f33ffd7b0b210e5f8a20ea2750ef"
   },
   {
     "path": "metadata/source_manifest.json",
@@ -37,7 +37,7 @@
   {
     "path": "README.txt",
     "bytes": 2886,
-    "sha256": "91d3f323bf82f7beed6963bddf8ccca0036bf21eda079fbab648a7b8283b3077"
+    "sha256": "4ec3669fe0d3fbdeca515eb91d1add0f56427cbe1398425b5ea2966c0fa2723b"
   },
   {
     "path": "RIGHTS.txt",

@@ -31,7 +31,7 @@ has been independently reproduced by these extraction materials.
 Run python scripts/validate_evidence.py with Python standard library only.
 Checks cover counts, arithmetic, selected conditions, citation identities, file
 hashes and the exact public-file allowlist. The mirror contains the same 11 text
-files; MANIFEST.json identifies all other files. Identifying details and original
+files; manifest.json identifies all other files. Identifying details and original
 repository links are omitted from this review copy. Bibliographic author names
 and third-party primary-source repository links remain for correct attribution.
 
