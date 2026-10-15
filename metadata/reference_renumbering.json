@@ -1,0 +1,296 @@
+{
+  "old_to_new": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "23": 11,
+    "31": 12,
+    "33": 13,
+    "41": 14,
+    "11": 15,
+    "12": 16,
+    "13": 17,
+    "14": 18,
+    "15": 19,
+    "21": 20,
+    "53": 21,
+    "54": 22,
+    "55": 23,
+    "16": 24,
+    "17": 25,
+    "18": 26,
+    "19": 27,
+    "20": 28,
+    "22": 29,
+    "30": 30,
+    "36": 31,
+    "24": 32,
+    "37": 33,
+    "27": 34,
+    "28": 35,
+    "29": 36,
+    "44": 37,
+    "45": 38,
+    "46": 39,
+    "38": 40,
+    "39": 41,
+    "35": 42,
+    "47": 43,
+    "48": 44,
+    "49": 45,
+    "50": 46,
+    "51": 47,
+    "52": 48,
+    "25": 49,
+    "26": 50,
+    "32": 51,
+    "40": 52,
+    "42": 53,
+    "34": 54,
+    "43": 55,
+    "57": 56,
+    "56": 57,
+    "58": 58
+  },
+  "current_references": {
+    "1": {
+      "previous_working_id": 1,
+      "entry": "V. Zhong, C. Xiong, R. Socher, Seq2SQL: Generating structured queries from natural language using reinforcement learning, arXiv preprint arXiv:1709.00103 (2017)."
+    },
+    "2": {
+      "previous_working_id": 2,
+      "entry": "T. Yu, R. Zhang, K. Yang, M. Yasunaga, D. Wang, Z. Li, J. Ma, I. Li, Q. Yao, S. Roman, Z. Zhang, D. Radev, Spider: A large-scale human-labeled dataset for complex and cross-domain semantic parsing and text-to-SQL task, in: Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2018, pp. 3911--3921."
+    },
+    "3": {
+      "previous_working_id": 3,
+      "entry": "T. Yu, R. Zhang, M. Yasunaga, Y. C. Tan, X. V. Lin, S. Li, H. Er, I. Li, B. Pang, T. Chen, et al., SParC: Cross-domain semantic parsing in context, in: Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL), 2019, pp. 4511--4523."
+    },
+    "4": {
+      "previous_working_id": 4,
+      "entry": "T. Yu, R. Zhang, H. Er, S. Li, E. Xue, B. Pang, X. V. Lin, Y. C. Tan, T. Shi, Z. Li, et al., CoSQL: A conversational text-to-SQL challenge towards cross-domain natural language interfaces to databases, in: Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), 2019, pp. 1962--1979."
+    },
+    "5": {
+      "previous_working_id": 5,
+      "entry": "J. Li, B. Hui, G. Qu, J. Yang, B. Li, B. Li, B. Wang, B. Qin, R. Geng, N. Huo, et al., Can LLM already serve as a database interface? A big bench for large-scale database grounded text-to-SQLs, in: Advances in Neural Information Processing Systems (NeurIPS), Vol. 36, 2023."
+    },
+    "6": {
+      "previous_working_id": 6,
+      "entry": "F. Lei, J. Chen, Y. Ye, R. Cao, D. Shin, H. Su, et al., Spider 2.0: Evaluating language models on real-world enterprise text-to-SQL workflows, in: International Conference on Learning Representations (ICLR), 2025."
+    },
+    "7": {
+      "previous_working_id": 7,
+      "entry": "M. Pourreza, D. Rafiei, DIN-SQL: Decomposed in-context learning of text-to-SQL with self-correction, in: Advances in Neural Information Processing Systems (NeurIPS), Vol. 36, 2023."
+    },
+    "8": {
+      "previous_working_id": 8,
+      "entry": "D. Gao, H. Wang, Y. Li, X. Sun, Y. Qian, B. Ding, J. Zhou, Text-to-SQL empowered by large language models: A benchmark evaluation, Proceedings of the VLDB Endowment 17 (5) (2024) 1132--1145."
+    },
+    "9": {
+      "previous_working_id": 9,
+      "entry": "B. Wang, C. Ren, J. Yang, X. Liang, J. Bai, L. Chai, Z. Yan, Q.-W. Zhang, D. Yin, X. Sun, Z. Li, MAC-SQL: A multi-agent collaborative framework for text-to-SQL, in: Proceedings of the 31st International Conference on Computational Linguistics (COLING), 2025, pp. 540--557."
+    },
+    "10": {
+      "previous_working_id": 10,
+      "entry": "M. Pourreza, H. Li, R. Sun, Y. Chung, S. Talaei, G. T. Kakkar, Y. Gan, A. Saberi, F. Ozcan, S. O. Arik, CHASE-SQL: Multi-path reasoning and preference optimized candidate selection in text-to-SQL, in: International Conference on Learning Representations (ICLR), 2025."
+    },
+    "11": {
+      "previous_working_id": 23,
+      "entry": "L. Sheng, S.-S. Xu, SLM-SQL: An exploration of small language models for text-to-SQL, arXiv preprint arXiv:2507.22478 (2025)."
+    },
+    "12": {
+      "previous_working_id": 31,
+      "entry": "H. Li, J. Zhang, H. Liu, J. Fan, X. Zhang, J. Zhu, R. Wei, H. Pan, C. Li, H. Chen, CodeS: Towards building open-source language models for text-to-SQL, Proceedings of the ACM on Management of Data 2 (3) (2024) 1--28."
+    },
+    "13": {
+      "previous_working_id": 33,
+      "entry": "T. D. Hoang, T. T. Huynh, M. Weidlich, T. T. Nguyen, T. Chen, H. Yin, Q. V. H. Nguyen, Boosting small language models for text-to-SQL with fine-grained execution feedback and cost-efficient rewards, in: Proceedings of ICDE 2026, 2026, pp. 2448--2461. doi:10.1109/ICDE65706.2026.00183."
+    },
+    "14": {
+      "previous_working_id": 41,
+      "entry": "M. Pourreza, S. Talaei, R. Sun, X. Wan, H. Li, A. Mirhoseini, A. Saberi, S. O. Arik, Reasoning-SQL: Reinforcement learning with partial rewards for reasoning-enhanced text-to-SQL, in: Conference on Language Modeling (COLM), 2025. \\url{https://openreview.net/forum?id=HbwkIDWQgN}."
+    },
+    "15": {
+      "previous_working_id": 11,
+      "entry": "G. Katsogiannis-Meimarakis, G. Koutrika, A survey on deep learning approaches for text-to-SQL, The VLDB Journal 32 (4) (2023) 905--936."
+    },
+    "16": {
+      "previous_working_id": 12,
+      "entry": "X. Zhu, Q. Li, L. Cui, Y. Liu, Large language model enhanced text-to-SQL generation: A survey, arXiv preprint arXiv:2410.06011 (2024)."
+    },
+    "17": {
+      "previous_working_id": 13,
+      "entry": "L. Shi, Z. Tang, N. Zhang, X. Zhang, Z. Yang, A survey on employing large language models for text-to-SQL tasks, ACM Computing Surveys, DOI 10.1145/3737873 (2025)."
+    },
+    "18": {
+      "previous_working_id": 14,
+      "entry": "X. Liu, S. Shen, B. Li, P. Ma, R. Jiang, Y. Zhang, J. Fan, G. Li, N. Tang, Y. Luo, A survey of Text-to-SQL in the era of LLMs: Where are we, and where are we going?, IEEE Transactions on Knowledge and Data Engineering 37 (10) (2025) 5735--5754. doi:10.1109/TKDE.2025.3592032."
+    },
+    "19": {
+      "previous_working_id": 15,
+      "entry": "N. F. Liu, K. Lin, J. Hewitt, A. Paranjape, M. Bevilacqua, F. Petroni, P. Liang, Lost in the middle: How language models use long contexts, Transactions of the Association for Computational Linguistics 12 (2024) 157--173."
+    },
+    "20": {
+      "previous_working_id": 21,
+      "entry": "T. Scholak, N. Schucher, D. Bahdanau, PICARD: Parsing incrementally for constrained auto-regressive decoding from language models, in: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2021, pp. 9895--9901."
+    },
+    "21": {
+      "previous_working_id": 53,
+      "entry": "S. Chang, J. Wang, M. Dong, L. Pan, H. Zhu, A. H. Li, W. Lan, S. Zhang, et al., Dr.Spider: A diagnostic evaluation benchmark towards Text-to-SQL robustness, in: International Conference on Learning Representations (ICLR), 2023. arXiv:2301.08881."
+    },
+    "22": {
+      "previous_working_id": 54,
+      "entry": "Q. Min, Y. Shi, Y. Zhang, A pilot study for Chinese SQL semantic parsing, in: Proceedings of EMNLP-IJCNLP 2019, 2019, pp. 3652--3658. doi:10.18653/v1/D19-1377."
+    },
+    "23": {
+      "previous_working_id": 55,
+      "entry": "L. Dou, Y. Gao, M. Pan, D. Wang, W. Che, D. Zhan, J.-G. Lou, MultiSpider: Towards benchmarking multilingual Text-to-SQL semantic parsing, Proceedings of the AAAI Conference on Artificial Intelligence 37 (11) (2023) 12745--12753. doi:10.1609/aaai.v37i11.26499."
+    },
+    "24": {
+      "previous_working_id": 16,
+      "entry": "R. Zhong, T. Yu, D. Klein, Semantic evaluation for text-to-SQL with distilled test suites, in: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2020, pp. 396--411."
+    },
+    "25": {
+      "previous_working_id": 17,
+      "entry": "B. Wang, R. Shin, X. Liu, O. Polozov, M. Richardson, RAT-SQL: Relation-aware schema encoding and linking for text-to-SQL parsers, in: Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL), 2020, pp. 7567--7578."
+    },
+    "26": {
+      "previous_working_id": 18,
+      "entry": "X. V. Lin, R. Socher, C. Xiong, Bridging textual and tabular data for cross-domain text-to-SQL semantic parsing, in: Findings of the Association for Computational Linguistics: EMNLP 2020, 2020, pp. 4870--4888."
+    },
+    "27": {
+      "previous_working_id": 19,
+      "entry": "R. Cao, L. Chen, Z. Chen, Y. Zhao, S. Zhu, K. Yu, LGESQL: Line graph enhanced text-to-SQL model with mixed local and non-local relations, in: Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP), 2021, pp. 2541--2555."
+    },
+    "28": {
+      "previous_working_id": 20,
+      "entry": "Y. Gan, X. Chen, J. Xie, M. Purver, J. R. Woodward, J. Drake, Q. Zhang, Natural SQL: Making SQL easier to infer from natural language specifications, in: Findings of the Association for Computational Linguistics: EMNLP 2021, 2021, pp. 2030--2042."
+    },
+    "29": {
+      "previous_working_id": 22,
+      "entry": "S. Papicchio, S. Rossi, L. Cagliero, P. Papotti, Think2SQL: Blueprinting reward density and advantage scaling for effective Text-to-SQL reasoning, Transactions on Machine Learning Research (2026). \\url{https://openreview.net/forum?id=NxU1KWnpOG}."
+    },
+    "30": {
+      "previous_working_id": 30,
+      "entry": "T. Yu, C.-S. Wu, X. V. Lin, B. Wang, Y. C. Tan, X. Yang, D. Radev, R. Socher, C. Xiong, GraPPa: Grammar-augmented pre-training for table semantic parsing, in: International Conference on Learning Representations (ICLR), 2021."
+    },
+    "31": {
+      "previous_working_id": 36,
+      "entry": "O. Rubin, J. Berant, SmBoP: Semi-autoregressive bottom-up semantic parsing, in: Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT), 2021, pp. 311--324."
+    },
+    "32": {
+      "previous_working_id": 24,
+      "entry": "H. Li, J. Zhang, C. Li, H. Chen, RESDSQL: Decoupling schema linking and skeleton parsing for text-to-SQL, in: Proceedings of the AAAI Conference on Artificial Intelligence, Vol. 37, 2023, pp. 13067--13075."
+    },
+    "33": {
+      "previous_working_id": 37,
+      "entry": "Y. Liu, Y. Zhu, Y. Gao, Z. Luo, X. Li, X. Shi, Y. Hong, J. Gao, Y. Li, B. Ding, J. Zhou, XiYan-SQL: A novel multi-generator framework for text-to-SQL, IEEE Transactions on Knowledge and Data Engineering 38 (2026) 2474--2487. doi:10.1109/TKDE.2026.3657851."
+    },
+    "34": {
+      "previous_working_id": 27,
+      "entry": "M. Pourreza, D. Rafiei, DTS-SQL: Decomposed text-to-SQL with small large language models, in: Findings of the Association for Computational Linguistics: EMNLP 2024, 2024, pp. 8212--8220."
+    },
+    "35": {
+      "previous_working_id": 28,
+      "entry": "Y. Dai, H. Yang, M. Hao, P. Chao, PARSQL: Enhancing text-to-SQL through SQL parsing and reasoning, in: Findings of the Association for Computational Linguistics: ACL 2025, 2025, pp. 661--681."
+    },
+    "36": {
+      "previous_working_id": 29,
+      "entry": "G. Qu, J. Li, B. Qin, X. Li, N. Huo, C. Ma, R. Cheng, SHARE: An SLM-based hierarchical action correction assistant for text-to-SQL, in: Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL), 2025, pp. 11268--11292."
+    },
+    "37": {
+      "previous_working_id": 44,
+      "entry": "P. Shi, P. Ng, Z. Wang, H. Zhu, A. H. Li, J. Wang, C. N. dos Santos, B. Xiang, Learning contextual representations for semantic parsing with generation-augmented pre-training, Proceedings of the AAAI Conference on Artificial Intelligence 35 (15) (2021) 13806--13814. doi:10.1609/aaai.v35i15.17627."
+    },
+    "38": {
+      "previous_working_id": 45,
+      "entry": "J. Yang, B. Hui, M. Yang, J. Yang, J. Lin, C. Zhou, Synthesizing Text-to-SQL data from weak and strong LLMs, in: Proceedings of ACL 2024, Vol. 1: Long Papers, 2024, pp. 7864--7875. doi:10.18653/v1/2024.acl-long.425."
+    },
+    "39": {
+      "previous_working_id": 46,
+      "entry": "Y. Hu, Y. Zhao, J. Jiang, W. Lan, H. Zhu, A. Chauhan, A. H. Li, L. Pan, J. Wang, C.-W. Hang, et al., Importance of synthesizing high-quality data for Text-to-SQL parsing, in: Findings of ACL 2023, 2023, pp. 1327--1343. doi:10.18653/v1/2023.findings-acl.86."
+    },
+    "40": {
+      "previous_working_id": 38,
+      "entry": "E. J. Hu, Y. Shen, P. Wallis, Z. Allen-Zhu, Y. Li, S. Wang, L. Wang, W. Chen, LoRA: Low-rank adaptation of large language models, in: International Conference on Learning Representations (ICLR), 2022."
+    },
+    "41": {
+      "previous_working_id": 39,
+      "entry": "T. Dettmers, A. Pagnoni, A. Holtzman, L. Zettlemoyer, QLoRA: Efficient finetuning of quantized LLMs, in: Advances in Neural Information Processing Systems (NeurIPS), Vol. 36, 2023."
+    },
+    "42": {
+      "previous_working_id": 35,
+      "entry": "S. Yuan, L. Chen, M. Yuan, Z. Jin, MCTS-SQL: Light-weight LLMs can master the text-to-SQL through Monte Carlo tree search, Proceedings of the AAAI Conference on Artificial Intelligence 40 (41) (2026) 34521--34529. doi:10.1609/aaai.v40i41.40751."
+    },
+    "43": {
+      "previous_working_id": 47,
+      "entry": "P. Liang, M. I. Jordan, D. Klein, Learning dependency-based compositional semantics, in: Proceedings of ACL 2011, 2011, pp. 590--599. \\url{https://aclanthology.org/P11-1060/}."
+    },
+    "44": {
+      "previous_working_id": 48,
+      "entry": "P. Pasupat, P. Liang, Compositional semantic parsing on semi-structured tables, in: Proceedings of ACL-IJCNLP 2015, 2015, pp. 1470--1480. doi:10.3115/v1/P15-1142."
+    },
+    "45": {
+      "previous_working_id": 49,
+      "entry": "P. Pasupat, P. Liang, Inferring logical forms from denotations, in: Proceedings of ACL 2016, 2016, pp. 23--32. doi:10.18653/v1/P16-1003."
+    },
+    "46": {
+      "previous_working_id": 50,
+      "entry": "A.-M. Popescu, O. Etzioni, H. Kautz, Towards a theory of natural language interfaces to databases, in: Proceedings of the 8th International Conference on Intelligent User Interfaces (IUI), 2003, pp. 149--157. doi:10.1145/604045.604070."
+    },
+    "47": {
+      "previous_working_id": 51,
+      "entry": "F. Li, H. V. Jagadish, Constructing an interactive natural language interface for relational databases, Proceedings of the VLDB Endowment 8 (1) (2014) 73--84. doi:10.14778/2735461.2735468."
+    },
+    "48": {
+      "previous_working_id": 52,
+      "entry": "S. Iyer, I. Konstas, A. Cheung, J. Krishnamurthy, L. Zettlemoyer, Learning a neural semantic parser from user feedback, in: Proceedings of ACL 2017, 2017, pp. 963--973. doi:10.18653/v1/P17-1089."
+    },
+    "49": {
+      "previous_working_id": 25,
+      "entry": "S. Talaei, M. Pourreza, Y.-C. Chang, A. Mirhoseini, A. Saberi, CHESS: Contextual harnessing for efficient SQL synthesis, arXiv preprint arXiv:2405.16755 (2024)."
+    },
+    "50": {
+      "previous_working_id": 26,
+      "entry": "S. Piao, J. Lee, S. Park, LitE-SQL: A lightweight and efficient text-to-SQL framework with vector-based schema linking and execution-guided self-correction, in: Findings of the Association for Computational Linguistics: EACL 2026, 2026, pp. 3593--3608. doi:10.18653/v1/2026.findings-eacl.186."
+    },
+    "51": {
+      "previous_working_id": 32,
+      "entry": "H. Li, S. Wu, X. Zhang, X. Huang, J. Zhang, F. Jiang, S. Wang, T. Zhang, J. Chen, R. Shi, H. Chen, C. Li, OmniSQL: Synthesizing high-quality text-to-SQL data at scale, Proceedings of the VLDB Endowment 18 (11) (2025) 4695--4709. doi:10.14778/3749646.3749723."
+    },
+    "52": {
+      "previous_working_id": 40,
+      "entry": "G. Hinton, O. Vinyals, J. Dean, Distilling the knowledge in a neural network, arXiv preprint arXiv:1503.02531 (2015)."
+    },
+    "53": {
+      "previous_working_id": 42,
+      "entry": "L. Sheng, S.-S. Xu, CSC-SQL: Corrective self-consistency in Text-to-SQL via reinforcement learning, in: Findings of IJCNLP-AACL 2025, 2025, pp. 1473--1496. doi:10.18653/v1/2025.findings-ijcnlp.91."
+    },
+    "54": {
+      "previous_working_id": 34,
+      "entry": "S. K. Gorti, I. Gofman, Z. Liu, J. Wu, N. Vouitsis, G. Yu, J. C. Cresswell, R. Hosseinzadeh, MSc-SQL: Multi-sample critiquing small language models for text-to-SQL translation, in: Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT), 2025, pp. 2145--2160."
+    },
+    "55": {
+      "previous_working_id": 43,
+      "entry": "F. Ranaldi, E. S. Ruzzetti, D. Onorati, L. Ranaldi, C. Giannone, A. Favalli, R. Romagnoli, F. M. Zanzotto, Investigating the impact of data contamination of large language models in Text-to-SQL translation, in: Findings of ACL 2024, 2024, pp. 13909--13920. doi:10.18653/v1/2024.findings-acl.827."
+    },
+    "56": {
+      "previous_working_id": 57,
+      "entry": "W. Kwon, Z. Li, S. Zhuang, Y. Sheng, L. Zheng, C. H. Yu, J. E. Gonzalez, H. Zhang, I. Stoica, Efficient memory management for large language model serving with PagedAttention, in: Proceedings of the 29th Symposium on Operating Systems Principles (SOSP), 2023, pp. 611--626. doi:10.1145/3600006.3613165."
+    },
+    "57": {
+      "previous_working_id": 56,
+      "entry": "A. Roberts, C. Raffel, N. Shazeer, How much knowledge can you pack into the parameters of a language model?, in: Proceedings of EMNLP 2020, 2020, pp. 5418--5426. doi:10.18653/v1/2020.emnlp-main.437."
+    },
+    "58": {
+      "previous_working_id": 58,
+      "entry": "DeepSeek-AI, DeepSeek-Coder-V2: Breaking the barrier of closed-source models in code intelligence, arXiv preprint arXiv:2406.11931 (2024)."
+    }
+  }
+}

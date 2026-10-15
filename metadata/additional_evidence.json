@@ -1,0 +1,120 @@
+{
+  "as_of": "2026-10-15",
+  "independent_replication": false,
+  "SENSE_small_rows": {
+    "source": "2024.acl-long.425, Table 5, PDF p7",
+    "condition": "strong-data SFT, not full SENSE preference training",
+    "DeepSeek_Coder_1.3B": {
+      "Spider_dev_EX": 79.1,
+      "BIRD_dev_EX": 40.7
+    },
+    "Qwen_1.8B": {
+      "Spider_dev_EX": 76.2,
+      "BIRD_dev_EX": 38.1
+    },
+    "inference_candidates": "NR"
+  },
+  "Hu_quality": {
+    "source": "2023.findings-acl.86, Tables 4,6,7, PDF pp7-8",
+    "T5_3B_DBcontent_Spider_EX": {
+      "synthetic": 78.6,
+      "no_typing": 76.7,
+      "no_key_relations": 77.2,
+      "no_schema_distance": 76.6
+    },
+    "real_n": [
+      128,
+      256,
+      512,
+      1024,
+      7000
+    ],
+    "real_EM": [
+      19.1,
+      32.3,
+      43.6,
+      53.2,
+      70.0
+    ],
+    "augmented_EM": [
+      46.3,
+      54.4,
+      59.9,
+      62.2,
+      74.4
+    ],
+    "gain_pp": [
+      27.2,
+      22.1,
+      16.3,
+      9.0,
+      4.4
+    ],
+    "caveat": "synthetic count and template coverage vary"
+  },
+  "MCTS": {
+    "source": "AAAI 2026, Tables 1-4, PDF pp6-7",
+    "Qwen_1.5B": {
+      "BIRD_dev_EX": 40.69,
+      "Spider_dev_EX": 67.45
+    },
+    "Qwen_3B": {
+      "BIRD_dev_EX": 46.71,
+      "Spider_dev_EX": 74.03
+    },
+    "search": {
+      "branching": 2,
+      "max_rollouts": 5,
+      "completed_SQL_candidates": "NR/adaptive"
+    },
+    "cache_ablation": {
+      "single_shot": [
+        0.63,
+        14.71
+      ],
+      "uncached_search": [
+        6.12,
+        40.69
+      ],
+      "cached_search": [
+        2.84,
+        40.42
+      ]
+    },
+    "source_issue": "Table 5 rounded cache-ablation direction differs from explicit Table 4"
+  },
+  "LitE": {
+    "source": "2026.findings-eacl.186, Tables 1,7,12; PDF pp6,12,14",
+    "Qwen_1.5B_top25": {
+      "BIRD_dev_EX": 51.43,
+      "Spider_test_EX": 76.67
+    },
+    "Qwen_3B_top25": {
+      "BIRD_dev_EX": 56.98,
+      "Spider_test_EX": 78.99
+    },
+    "correct_schema_diagnostic": {
+      "1.5B": [
+        65.19,
+        83.0
+      ],
+      "3B": [
+        70.01,
+        85.28
+      ]
+    },
+    "retriever_params_B": 0.6,
+    "inference_candidate_or_repair_cap": "NR"
+  },
+  "contamination": {
+    "source": "2024.findings-acl.827",
+    "scope": "GPT-3.5, Spider/Termite, adversarial table disconnection",
+    "sub4B_effect_established": false
+  },
+  "scope_limits": [
+    "No fresh model experiments",
+    "No complete post-May systematic literature census",
+    "No sub-4B SParC or Spider2 result established in targeted extraction",
+    "No common-hardware model-size/quantization Pareto comparison"
+  ]
+}

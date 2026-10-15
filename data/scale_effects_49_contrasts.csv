@@ -1,0 +1,50 @@
+﻿method,model,metric,baseline,result,gain_pp,main_table
+SQL-centric incremental pretraining,CodeS-1B,spider_ts,46.8,57.4,10.6,False
+SQL-centric incremental pretraining,CodeS-1B,bird_ex_no_ek,18.84,25.42,6.58,True
+SQL-centric incremental pretraining,CodeS-1B,bird_ex_ek,21.9,29.47,7.57,False
+SFT vs 3-shot ICL,CodeS-1B,bird_ex_no_ek,25.42,38.46,13.04,False
+SFT vs 3-shot ICL,CodeS-1B,bird_ex_ek,29.47,50.46,20.99,False
+SQL-centric incremental pretraining,CodeS-3B,spider_ts,60.0,67.8,7.8,False
+SQL-centric incremental pretraining,CodeS-3B,bird_ex_no_ek,26.01,31.23,5.22,True
+SQL-centric incremental pretraining,CodeS-3B,bird_ex_ek,32.72,39.18,6.46,False
+SFT vs 3-shot ICL,CodeS-3B,bird_ex_no_ek,31.23,43.42,12.19,False
+SFT vs 3-shot ICL,CodeS-3B,bird_ex_ek,39.18,55.02,15.84,False
+SQL-centric incremental pretraining,CodeS-7B,spider_ts,63.1,69.8,6.7,False
+SQL-centric incremental pretraining,CodeS-7B,bird_ex_no_ek,29.79,33.44,3.65,True
+SQL-centric incremental pretraining,CodeS-7B,bird_ex_ek,39.24,41.98,2.74,False
+SFT vs 3-shot ICL,CodeS-7B,bird_ex_no_ek,33.44,45.24,11.8,False
+SFT vs 3-shot ICL,CodeS-7B,bird_ex_ek,41.98,57.17,15.19,False
+SQL-centric incremental pretraining,CodeS-15B,spider_ts,67.6,71.5,3.9,False
+SQL-centric incremental pretraining,CodeS-15B,bird_ex_no_ek,32.99,35.14,2.15,True
+SQL-centric incremental pretraining,CodeS-15B,bird_ex_ek,40.09,43.48,3.39,False
+SFT vs 3-shot ICL,CodeS-15B,bird_ex_no_ek,35.14,47.91,12.77,False
+SFT vs 3-shot ICL,CodeS-15B,bird_ex_ek,43.48,58.47,14.99,False
+Multi-task SFT vs standard SFT,DeepSeek-Coder-V2-Lite,bird_ex,51.49,55.99,4.5,False
+Multi-task SFT vs instruct baseline,DeepSeek-Coder-V2-Lite,bird_ex,40.61,55.99,15.38,False
+Multi-task SFT vs standard SFT,Qwen2.5-Coder-7B,bird_ex,56.06,60.1,4.04,True
+Multi-task SFT vs instruct baseline,Qwen2.5-Coder-7B,bird_ex,50.39,60.1,9.71,False
+Multi-task SFT vs standard SFT,Qwen2.5-Coder-14B,bird_ex,61.02,63.95,2.93,True
+Multi-task SFT vs instruct baseline,Qwen2.5-Coder-14B,bird_ex,55.28,63.95,8.67,False
+Multi-task SFT vs standard SFT,Codestral-22B,bird_ex,62.32,65.25,2.93,False
+Multi-task SFT vs instruct baseline,Codestral-22B,bird_ex,50.52,65.25,14.73,False
+Multi-task SFT vs standard SFT,Qwen2.5-Coder-32B,bird_ex,64.67,66.88,2.21,True
+Multi-task SFT vs instruct baseline,Qwen2.5-Coder-32B,bird_ex,58.6,66.88,8.28,False
+SFT vs instruct baseline,Qwen2.5-Coder-3B,bird_ex,45.17,55.9,10.73,True
+RL-only vs SFT,Qwen2.5-Coder-3B,bird_ex,55.9,58.67,2.77,True
+"RL-only vs SFT, oracle schema",Qwen2.5-Coder-3B,bird_fs_ex,63.62,65.31,1.69,False
+SFT vs instruct baseline,Qwen2.5-Coder-7B,bird_ex,58.73,61.53,2.8,True
+RL-only vs SFT,Qwen2.5-Coder-7B,bird_ex,61.53,64.01,2.48,True
+"RL-only vs SFT, oracle schema",Qwen2.5-Coder-7B,bird_fs_ex,68.12,70.66,2.54,False
+SFT vs instruct baseline,Qwen2.5-Coder-14B,bird_ex,63.1,63.75,0.65,True
+RL-only vs SFT,Qwen2.5-Coder-14B,bird_ex,63.75,65.31,1.56,True
+"RL-only vs SFT, oracle schema",Qwen2.5-Coder-14B,bird_fs_ex,68.83,72.03,3.2,False
+PICARD constrained decoding,T5-Base,spider_ex,57.9,68.4,10.5,True
+PICARD constrained decoding,T5-Base,spider_em,57.2,65.8,8.6,False
+PICARD constrained decoding,T5-Large,spider_ex,67.2,72.9,5.7,True
+PICARD constrained decoding,T5-Large,spider_em,65.3,69.1,3.8,False
+PICARD constrained decoding,T5-3B,spider_ex,71.4,76.3,4.9,True
+PICARD constrained decoding,T5-3B,spider_em,69.9,74.1,4.2,False
+PICARD constrained decoding,T5-3B + DB content,spider_ex,74.4,79.3,4.9,False
+PICARD constrained decoding,T5-3B + DB content,spider_em,71.5,75.5,4.0,False
+PICARD constrained decoding,T5-3B,cosql_dev_qm,53.8,56.9,3.1,False
+PICARD constrained decoding,T5-3B,cosql_dev_im,21.8,24.2,2.4,False

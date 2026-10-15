@@ -1,0 +1,37 @@
+DATA DICTIONARY
+
+S1 scale_effects_49_contrasts.csv
+method: intervention and its comparison baseline.
+model: evaluated generator and nominal size.
+metric: spider_ts, spider_ex, spider_em, bird_ex, bird_ex_no_ek, bird_ex_ek,
+  bird_fs_ex (correct-schema diagnostic), cosql_dev_qm or cosql_dev_im.
+  CoSQL QM measures questions; IM measures complete interactions. They are not EX.
+baseline/result: reported percentage endpoints under the documented condition.
+gain_pp: result minus baseline in percentage points, not relative percent change.
+main_table: True for the 16 main Table 4 contrasts; False for supplementary ones.
+
+S2 compact_configurations_24.csv
+system_generator: exact generator/training/retrieval condition in Table 9.
+BIRD_dev_EX: reported development execution accuracy; paired values retain
+  no-EK / with-EK order. NR means the exact condition was not established.
+Spider_dev_EX: reported Spider development execution accuracy; NR is retained
+  for TS-only, test-only or otherwise unavailable development EX.
+inference_search_auxiliaries: beams, SQL samples, rollouts, revision limits and
+  online helper modules. NR and adaptive counts are intentionally preserved.
+numerical_source_venue: citation number, source table and version/venue note.
+Some cells preserve LaTeX-style scholarly notation from the manuscript.
+
+S3 source_manifest.json
+file/url: pinned numerical source artifact and public retrieval URL.
+bytes/pages/sha256: exact retrieved PDF identity; these are provenance records,
+  not embedded third-party files or claims of reproduction.
+
+S4/S5
+Raw author-reported endpoints and conditional extraction notes. Stable source
+tags in S4 are distinct from renumbered journal reference IDs; use S6 to trace
+earlier working reference numbers. Missingness must not be imputed.
+
+S6
+old_to_new: earlier working citation number to final first-appearance number.
+current_references: bibliographic entries and original working IDs, not new
+numerical evaluations.

@@ -1,0 +1,233 @@
+[
+  {
+    "file": "codes_2402.16347v1.pdf",
+    "url": "https://arxiv.org/pdf/2402.16347v1",
+    "bytes": 1190441,
+    "pages": 16,
+    "sha256": "3e42f4ff6f976539dec574db23445c8a49169878aa4c00220f9bc15efd7f6deb"
+  },
+  {
+    "file": "xiyan_2507.04701v2.pdf",
+    "url": "https://arxiv.org/pdf/2507.04701v2",
+    "bytes": 1630719,
+    "pages": 14,
+    "sha256": "53738bfcb2320102fbe038d2202817648fb560ac324a305b5df0bcee3d5f17c1"
+  },
+  {
+    "file": "reasoning_2503.23157v2.pdf",
+    "url": "https://arxiv.org/pdf/2503.23157v2",
+    "bytes": 1758267,
+    "pages": 29,
+    "sha256": "d6a990268339a1dd5958d48bb3787c033c8755276c3856ba9c5de3b35fc07a20"
+  },
+  {
+    "file": "picard_2021.emnlp-main.779.pdf",
+    "url": "https://aclanthology.org/2021.emnlp-main.779.pdf",
+    "bytes": 251920,
+    "pages": 7,
+    "sha256": "500a85a62dd245a2a3ce17e2117e22c35a4a6fb38dc02a4f5e51e7f0ea5cc4d6"
+  },
+  {
+    "file": "resdsql_2302.05965v3.pdf",
+    "url": "https://arxiv.org/pdf/2302.05965v3",
+    "bytes": 361475,
+    "pages": 9,
+    "sha256": "0103be09f523b09c1a76351829f8bf33f9b27e761482e65ca2b6b8fc521f57f4"
+  },
+  {
+    "file": "slmsql_2507.22478v1.pdf",
+    "url": "https://arxiv.org/pdf/2507.22478v1",
+    "bytes": 399619,
+    "pages": 16,
+    "sha256": "fae34b69c331af0908a4ca8bcd897b7b728e93478185dc9aa8515694b6117486"
+  },
+  {
+    "file": "finer_2605.03465v1.pdf",
+    "url": "https://arxiv.org/pdf/2605.03465v1",
+    "bytes": 1448549,
+    "pages": 15,
+    "sha256": "a5714083f19964434338a1003f2201d16ce384ceaa2f086d77ce11b21ce52ed6"
+  },
+  {
+    "file": "t5_sizes_roberts2020.pdf",
+    "url": "https://colinraffel.com/publications/arxiv2020how.pdf",
+    "bytes": 311977,
+    "pages": 10,
+    "sha256": "dbfa635bf391f972000b2f98f7077b336dacd9c558ed99430d6bffb6fbd56a3b"
+  },
+  {
+    "file": "gap_aaai2021.pdf",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/download/17627/17434",
+    "bytes": 191386,
+    "pages": 9,
+    "sha256": "794fff12159f77fb371061eb908cc21c0bffef93079c9da783b93c9d43b5cf9d"
+  },
+  {
+    "file": "hu_quality_2023.findings-acl.86.pdf",
+    "url": "https://aclanthology.org/2023.findings-acl.86.pdf",
+    "bytes": 518952,
+    "pages": 17,
+    "sha256": "67835f5cdccd9c8e7a9ef836a8790fcf351b5fad8b1faed312a034f7093f4447"
+  },
+  {
+    "file": "sense_2024.acl-long.425.pdf",
+    "url": "https://aclanthology.org/2024.acl-long.425.pdf",
+    "bytes": 2068215,
+    "pages": 12,
+    "sha256": "57c61dfbc25e992f78a3ff9ac0de3e89d28fe4b7a7989da614171edd18ce29d1"
+  },
+  {
+    "file": "contamination_2024.findings-acl.827.pdf",
+    "url": "https://aclanthology.org/2024.findings-acl.827.pdf",
+    "bytes": 193795,
+    "pages": 12,
+    "sha256": "299d1e96ceb1b6983e94cce7b9adca037811756c6637466b9cb4097b4b101d91"
+  },
+  {
+    "file": "liang_2011_P11-1060.pdf",
+    "url": "https://aclanthology.org/P11-1060.pdf",
+    "bytes": 398449,
+    "pages": 10,
+    "sha256": "57afedf49dc7a860995e85fae30b20e68ae93d6f3bafd2056afb5e3345dbc7e3"
+  },
+  {
+    "file": "pasupat_2015_P15-1142.pdf",
+    "url": "https://aclanthology.org/P15-1142.pdf",
+    "bytes": 465713,
+    "pages": 11,
+    "sha256": "f85afac256a44986ccd4c2ec3a29c615cd007f05132272f30cc118a9f95bb9f8"
+  },
+  {
+    "file": "pasupat_2016_P16-1003.pdf",
+    "url": "https://aclanthology.org/P16-1003.pdf",
+    "bytes": 385691,
+    "pages": 10,
+    "sha256": "7842a0c6c6878cfccc81448c8dabf3697178ec87c1e55b8f80e27f9c3e3a48a0"
+  },
+  {
+    "file": "iyer_feedback_2017_P17-1089.pdf",
+    "url": "https://aclanthology.org/P17-1089.pdf",
+    "bytes": 305642,
+    "pages": 11,
+    "sha256": "36fb0fcf28bcf54dd7a8a770fda9ce56748b542439387c189116679d34b8857c"
+  },
+  {
+    "file": "multispider_aaai2023.pdf",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26499/26271",
+    "bytes": 1039789,
+    "pages": 9,
+    "sha256": "dad78aacb35a705d9ae87d1f4d3f739d4150dcb499cc8470b36f514af4014ece"
+  },
+  {
+    "file": "drspider_2301.08881v1.pdf",
+    "url": "https://arxiv.org/pdf/2301.08881v1",
+    "bytes": 1065160,
+    "pages": 26,
+    "sha256": "a5aca642bac65061b2428d27de0388b2102ca63e2a316c938c85ad55006190a7"
+  },
+  {
+    "file": "nalir_2014.pdf",
+    "url": "https://datavis.cs.columbia.edu/files/papers/nlpdb.pdf",
+    "bytes": 941417,
+    "pages": 12,
+    "sha256": "66233d76dce98fe45288416653d3b98b499a917a508fff692bbcbd02b2c57a01"
+  },
+  {
+    "file": "cspider_2019_D19-1377.pdf",
+    "url": "https://aclanthology.org/D19-1377.pdf",
+    "bytes": 684605,
+    "pages": 7,
+    "sha256": "30814eba98702e54e3c2dcf26786ce0157eccce8e9c628b3396aa49b0fe6bc9c"
+  },
+  {
+    "file": "precise_2003.pdf",
+    "url": "https://aiweb.cs.washington.edu/research/projects/ai2/nli/jair/iui.pdf",
+    "bytes": 115190,
+    "pages": 8,
+    "sha256": "e499e59908fc01592e418c57457972b6d1dca5eb869168dfa64652e3e670a8d6"
+  },
+  {
+    "file": "mcts_aaai2026.pdf",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40751/44712",
+    "bytes": 486745,
+    "pages": 9,
+    "sha256": "123f56e2d02176e4b642b57394b7d172d6e5a134d04ba24d6c2402c7e7b5cd96"
+  },
+  {
+    "file": "lite_2510.09014v2.pdf",
+    "url": "https://arxiv.org/pdf/2510.09014v2",
+    "bytes": 783766,
+    "pages": 17,
+    "sha256": "ea7bed18b760266e604e3106db2e5be81d91b68af0eb7020b4a6467d954d9637"
+  },
+  {
+    "file": "spider2_2411.07763v2.pdf",
+    "url": "https://arxiv.org/pdf/2411.07763v2",
+    "bytes": 4814977,
+    "pages": 45,
+    "sha256": "b27bcee967778e864809adf241acd4c250a52d59f4ff301a34b4f4f3e6be7908"
+  },
+  {
+    "file": "sparc_2019_P19-1443.pdf",
+    "url": "https://aclanthology.org/P19-1443.pdf",
+    "bytes": 985881,
+    "pages": 13,
+    "sha256": "6c3c559a83c0bfbf47260c6e3e110969fb69942f072d5eb987d40578d436b243"
+  },
+  {
+    "file": "cosql_2019_D19-1204.pdf",
+    "url": "https://aclanthology.org/D19-1204.pdf",
+    "bytes": 1526893,
+    "pages": 18,
+    "sha256": "515b431e584b3fdc67dac4761912e8f5a209babe97c3ec43ebe8256534c56254"
+  },
+  {
+    "file": "lite_2026.findings-eacl.186.pdf",
+    "url": "https://aclanthology.org/2026.findings-eacl.186.pdf",
+    "bytes": 847640,
+    "pages": 16,
+    "sha256": "58bd7250fe008ee1acfb3f34f41ebf36f1274107b9adc547b9bbca7986bb5424"
+  },
+  {
+    "file": "dail_pvldb2024.pdf",
+    "url": "https://www.vldb.org/pvldb/vol17/p1132-gao.pdf",
+    "bytes": 1261594,
+    "pages": 14,
+    "sha256": "56181dfada89034f424326b09a86a5fa72e3eb8129ac9309054eb98e5c606084"
+  },
+  {
+    "file": "pagedattention_2309.06180v1.pdf",
+    "url": "https://arxiv.org/pdf/2309.06180v1",
+    "bytes": 1459631,
+    "pages": 16,
+    "sha256": "55b3b324d779a67c59dac2519445e3b07c14e6ff5c656fadb47a3d7b5997469e"
+  },
+  {
+    "file": "deepseekv2_2406.11931v1.pdf",
+    "url": "https://arxiv.org/pdf/2406.11931v1",
+    "bytes": 396316,
+    "pages": 19,
+    "sha256": "de4e77c86e6320ff0974aac3825133540fa7ddc31da79e0d8a353dc6264549a3"
+  },
+  {
+    "file": "omnisql_pvldb2025.pdf",
+    "url": "https://www.vldb.org/pvldb/vol18/p4695-li.pdf",
+    "bytes": 7251113,
+    "pages": 15,
+    "sha256": "38243064ed885f894408208f34e357f44c9453ad4b2429349f04ce04ea56b811"
+  },
+  {
+    "file": "liu_survey_tkde2025.pdf",
+    "url": "https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/TKDE25-NL2SQL.pdf",
+    "bytes": 7698860,
+    "pages": 20,
+    "sha256": "ab9a6a43ac6ea5544694a564e8db398464b565b94aa872169fa8eff8a9fbdffe"
+  },
+  {
+    "file": "csc_2025.findings-ijcnlp.91.pdf",
+    "url": "https://aclanthology.org/2025.findings-ijcnlp.91.pdf",
+    "bytes": 366988,
+    "pages": 24,
+    "sha256": "1233e69191bb3f136ccc96e61af76f660d591edb790e9164bf897f54d8e60809"
+  }
+]

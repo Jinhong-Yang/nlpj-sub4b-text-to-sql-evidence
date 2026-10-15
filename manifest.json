@@ -1,0 +1,52 @@
+[
+  {
+    "path": "DATA_DICTIONARY.txt",
+    "bytes": 2015,
+    "sha256": "591a8c19485959a93bd3598df0fae19c97fece6f09a9435b0e813ab0f05014a9"
+  },
+  {
+    "path": "README.txt",
+    "bytes": 3625,
+    "sha256": "ac02cae41cd9700e14d0eb779f936cd45149b08480a3187c3baff2b0d40a71cc"
+  },
+  {
+    "path": "RIGHTS.txt",
+    "bytes": 505,
+    "sha256": "88faa8088cdb7c69966090bb3797af7db45651d5ea93b998b7075334c0ed0f29"
+  },
+  {
+    "path": "data/compact_configurations_24.csv",
+    "bytes": 2757,
+    "sha256": "c5643abe87d6c31a95d0250259b7bcccd6aa61032bec2df0c3bf67d23ab09ce8"
+  },
+  {
+    "path": "data/scale_effects_49_contrasts.csv",
+    "bytes": 3710,
+    "sha256": "82a7489acfa065a4997667f903fcf10dacc5813357963e07fce4a5cc6e577d78"
+  },
+  {
+    "path": "metadata/additional_evidence.json",
+    "bytes": 2754,
+    "sha256": "add556ae3fcdf223d651c223c4219e4ac315a63db30d9e3e0c5acc513de9f693"
+  },
+  {
+    "path": "metadata/core_evidence.json",
+    "bytes": 50701,
+    "sha256": "1de49935b3aaeebc6e0a623815d90d32951bc70743c22bed07d9403d2fad8929"
+  },
+  {
+    "path": "metadata/reference_renumbering.json",
+    "bytes": 18380,
+    "sha256": "69976a37075b7b3fa670943a3d29c6c2257a1ae8e45295740a05c1655f032a07"
+  },
+  {
+    "path": "metadata/source_manifest.json",
+    "bytes": 7748,
+    "sha256": "830c028079aa55e07a7de7a88c7b10fb115fc691482d78175aeb4a7a16dd9fac"
+  },
+  {
+    "path": "scripts/validate_evidence.py",
+    "bytes": 1909,
+    "sha256": "717b2830a4d81ae1794bc9324e3eec125940e351aab1b83d7cbf361737db6ecf"
+  }
+]

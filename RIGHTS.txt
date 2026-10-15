@@ -1,0 +1,9 @@
+RIGHTS AND ATTRIBUTION
+
+The numerical endpoints are attributed to the primary studies identified in the
+register. Original papers, datasets, software, models and trademarks retain their
+respective rights and licenses. No third-party paper PDFs are redistributed.
+
+No additional reuse license for author-created prose or compiled materials has
+been selected in this preparation step. A public repository does not itself
+grant an additional license. Contact the survey authors for reuse questions.
