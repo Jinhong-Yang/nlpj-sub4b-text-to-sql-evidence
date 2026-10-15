@@ -229,5 +229,33 @@
     "bytes": 366988,
     "pages": 24,
     "sha256": "1233e69191bb3f136ccc96e61af76f660d591edb790e9164bf897f54d8e60809"
+  },
+  {
+    "file": "graphix_aaai2023.pdf",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26536/26308",
+    "bytes": 463009,
+    "pages": 9,
+    "sha256": "9614544f15d282d18f6fce8491ff87527e6c991876d7e154b20f965c25e1647f"
+  },
+  {
+    "file": "rasat_2022.emnlp-main.211.pdf",
+    "url": "https://aclanthology.org/2022.emnlp-main.211.pdf",
+    "bytes": 719148,
+    "pages": 15,
+    "sha256": "724a28f1d394d2a56afb2e5ec89f80ecf1572cf9792088bfcffaa25e98cfd130"
+  },
+  {
+    "file": "t5_raffel_jmlr2020.pdf",
+    "url": "https://www.jmlr.org/papers/volume21/20-074/20-074.pdf",
+    "bytes": 873534,
+    "pages": 67,
+    "sha256": "66cf9f77e46691853703eb6982dea337a53361d509fb99be719b5410c5467e41"
+  },
+  {
+    "file": "metatool_2026.findings-acl.492.pdf",
+    "url": "https://aclanthology.org/2026.findings-acl.492.pdf",
+    "bytes": 291892,
+    "pages": 16,
+    "sha256": "2faabc2f71add33511c250f4f80984c475ff8c68f9ccd603a607cf0473ae1fb8"
   }
 ]

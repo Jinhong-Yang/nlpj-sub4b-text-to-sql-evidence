@@ -1,13 +1,13 @@
 [
   {
     "path": "DATA_DICTIONARY.txt",
-    "bytes": 2015,
-    "sha256": "591a8c19485959a93bd3598df0fae19c97fece6f09a9435b0e813ab0f05014a9"
+    "bytes": 2156,
+    "sha256": "525f5c98bff25c80171b1ccd803c6752e08b87dc1b73e053ae716ce09d62da25"
   },
   {
     "path": "README.txt",
-    "bytes": 3625,
-    "sha256": "ac02cae41cd9700e14d0eb779f936cd45149b08480a3187c3baff2b0d40a71cc"
+    "bytes": 4029,
+    "sha256": "3590927c1bdd6260be9369aa9fdca82e66378ea61175c9ea8cdea96496a0d481"
   },
   {
     "path": "RIGHTS.txt",
@@ -15,38 +15,38 @@
     "sha256": "88faa8088cdb7c69966090bb3797af7db45651d5ea93b998b7075334c0ed0f29"
   },
   {
-    "path": "data/compact_configurations_24.csv",
-    "bytes": 2757,
-    "sha256": "c5643abe87d6c31a95d0250259b7bcccd6aa61032bec2df0c3bf67d23ab09ce8"
+    "path": "data/compact_configurations.csv",
+    "bytes": 4304,
+    "sha256": "d690e655ea5690813552a30ab11e0163c3140a80f17fd89f284a2038295b0147"
   },
   {
-    "path": "data/scale_effects_49_contrasts.csv",
-    "bytes": 3710,
-    "sha256": "82a7489acfa065a4997667f903fcf10dacc5813357963e07fce4a5cc6e577d78"
+    "path": "data/scale_effects.csv",
+    "bytes": 16228,
+    "sha256": "9b58c1193fc8742aa02b266e4734a90b9ddc3ee4dd874986e29631f390f78568"
   },
   {
     "path": "metadata/additional_evidence.json",
-    "bytes": 2754,
-    "sha256": "add556ae3fcdf223d651c223c4219e4ac315a63db30d9e3e0c5acc513de9f693"
+    "bytes": 9112,
+    "sha256": "74ee4b8df3decdb231864281050a2a91ffb5453396af3d9f7556e93bd01ccde2"
   },
   {
     "path": "metadata/core_evidence.json",
-    "bytes": 50701,
-    "sha256": "1de49935b3aaeebc6e0a623815d90d32951bc70743c22bed07d9403d2fad8929"
+    "bytes": 72973,
+    "sha256": "2241ae67bff5b7cf685741ced4ed8208b1d5cd5d4d88ac3d6dea41161d354667"
   },
   {
     "path": "metadata/reference_renumbering.json",
-    "bytes": 18380,
-    "sha256": "69976a37075b7b3fa670943a3d29c6c2257a1ae8e45295740a05c1655f032a07"
+    "bytes": 25543,
+    "sha256": "d4c9db06ad0bae367a5cde1cb62d8c677104607fd539669ff25fbb1fe3e7c971"
   },
   {
     "path": "metadata/source_manifest.json",
-    "bytes": 7748,
-    "sha256": "830c028079aa55e07a7de7a88c7b10fb115fc691482d78175aeb4a7a16dd9fac"
+    "bytes": 8732,
+    "sha256": "dc9162cff4b1214bb65277a66f4b9c25e3ddee6c0dd221df1084f587b7d88c18"
   },
   {
     "path": "scripts/validate_evidence.py",
-    "bytes": 1909,
-    "sha256": "717b2830a4d81ae1794bc9324e3eec125940e351aab1b83d7cbf361737db6ecf"
+    "bytes": 3207,
+    "sha256": "3f13f2681f0d1501c88a9b9c210fd791ff2f032f1c3bc2598c49d7ba959c89cf"
   }
 ]

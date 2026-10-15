@@ -112,9 +112,226 @@
     "sub4B_effect_established": false
   },
   "scope_limits": [
-    "No fresh model experiments",
-    "No complete post-May systematic literature census",
-    "No sub-4B SParC or Spider2 result established in targeted extraction",
-    "No common-hardware model-size/quantization Pareto comparison"
-  ]
+    "No fresh model experiments or independent reproduction",
+    "No exhaustive post-May literature census",
+    "Within stated primary-source search, no verified sub-4B full official Spider2.0-SQLite/Lite result",
+    "No common-hardware Pareto comparison"
+  ],
+  "Graphix": {
+    "source": {
+      "file": "graphix_aaai2023.pdf",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26536/26308",
+      "bytes": 463009,
+      "pages": 9,
+      "sha256": "9614544f15d282d18f6fce8491ff87527e6c991876d7e154b20f965c25e1647f",
+      "reference_number": 36,
+      "version": "publisher primary PDF"
+    },
+    "spider_table": "Table 1, PDF p5",
+    "spider_3B_no_picard": {
+      "baseline_EM_EX": [
+        71.5,
+        74.4
+      ],
+      "graphix_EM_EX": [
+        75.6,
+        78.2
+      ]
+    },
+    "spider_3B_picard": {
+      "baseline_EM_EX": [
+        75.5,
+        79.3
+      ],
+      "graphix_EM_EX": [
+        77.1,
+        81.0
+      ]
+    },
+    "robustness_EM": {
+      "Spider_Syn": [
+        58,
+        66.9
+      ],
+      "Spider_DK": [
+        46.9,
+        51.2
+      ],
+      "Spider_Realistic": [
+        62,
+        72.4
+      ]
+    },
+    "conditions": "Published T5 baseline, same PICARD status; no verified equal beam/compute; generator nominal 3B plus graph layers, exact total NR",
+    "source_issue": "Table 4 overall T5-3B EM 71.6 versus Table 1 71.5; main extraction consistently uses Table 1"
+  },
+  "RASAT": {
+    "source": {
+      "file": "rasat_2022.emnlp-main.211.pdf",
+      "url": "https://aclanthology.org/2022.emnlp-main.211.pdf",
+      "bytes": 719148,
+      "pages": 15,
+      "sha256": "724a28f1d394d2a56afb2e5ec89f80ecf1572cf9792088bfcffaa25e98cfd130",
+      "reference_number": 20,
+      "version": "publisher primary PDF"
+    },
+    "generator_parameters": 2851610624,
+    "beam": 8,
+    "picard": {
+      "mode": "parse with guards",
+      "max_tokens_to_check": 2
+    },
+    "Spider_dev": {
+      "no_PICARD_EM_EX": [
+        72.6,
+        76.6
+      ],
+      "PICARD_EM_EX": [
+        75.3,
+        80.5
+      ]
+    },
+    "SParC": {
+      "dev_no_PICARD_QEM_IEM_QEX_IEX": [
+        65,
+        45.7,
+        69.9,
+        50.7
+      ],
+      "dev_PICARD_QEM_IEM_QEX_IEX": [
+        67.7,
+        49.1,
+        73.3,
+        54
+      ],
+      "test_PICARD_QEM_IEM_QEX_IEX": [
+        67.7,
+        45.2,
+        74,
+        52.6
+      ]
+    },
+    "CoSQL": {
+      "dev_no_PICARD_QEM_IEM_QEX_IEX": [
+        56.2,
+        25.9,
+        63.8,
+        34.8
+      ],
+      "dev_PICARD_QEM_IEM_QEX_IEX": [
+        58.8,
+        27,
+        67,
+        39.6
+      ],
+      "test_PICARD_QEM_IEM_QEX_IEX": [
+        55.7,
+        26.5,
+        66.3,
+        37.4
+      ]
+    },
+    "locations": "Tables 2,4,5,8,11; PDF pp6-8,13",
+    "source_issue": "Table 10 ablation baseline differs from Table 2; headlines use Tables 2 and 4"
+  },
+  "untuned_baseline_audit": {
+    "sources_checked": [
+      "FINER Table II and V-A",
+      "SLM-SQL Tables 2-4",
+      "LitE Tables 1,7,12",
+      "MCTS Tables 2,4",
+      "SENSE Tables 2,5"
+    ],
+    "FINER": "No untuned compact instruct row established; GRPO step 0 is already SFT",
+    "LitE": "Headline correct-schema baselines are not ordinary retrieved-schema baselines",
+    "SLM_Spider_SC_16samples": {
+      "Llama3.2_1B": 30.79,
+      "Qwen3_0.6B": 63.19,
+      "Qwen2.5_Coder_0.5B": 42.13,
+      "Qwen2.5_Coder_1.5B": 63.54,
+      "DeepSeek_Coder_1.3B_Instruct": 48.23
+    },
+    "SLM_Llama_1B_SFT_RL_SC": 67.63,
+    "SLM_Llama_gain_pp": 36.84,
+    "merge_model_note": "SC alone uses voting; CSC invokes a separately SQL-trained 0.5B merge model, so CSC is not an untuned-system baseline",
+    "MCTS_single_shot_BIRD_EX": {
+      "1.5B": 14.71,
+      "3B": 17.68
+    },
+    "SLM_Table2_Qwen1.5B_28.40": "Secondary baseline row with unestablished exact sampling protocol; not added as a matched condition"
+  },
+  "data_amount_and_cost": {
+    "OmniSQL": {
+      "reference_number": 22,
+      "amount_study": "Section 6.3.3/Figure 4, PDF p12; 20/40/60/80/100 percent random subsets, one epoch; 7/14/32B; greedy",
+      "plot_note": "Some robustness/SQLite points fluctuate; unlabeled coordinates not digitized as exact scores",
+      "synthetic_presence_exact_endpoints": {
+        "BIRD_dev_EX": [
+          59.6,
+          63.9
+        ],
+        "Spider_dev_TS": [
+          80.3,
+          81.2
+        ],
+        "Spider2_SQLite_EX_135tasks": [
+          5.9,
+          10.4
+        ]
+      },
+      "reported_student_training_days": [
+        6,
+        12,
+        20
+      ],
+      "student_training_GPUs": "8 A800-SXM4-80GB",
+      "derived_student_GPU_hours": [
+        1152,
+        2304,
+        3840
+      ],
+      "synthesis_GPU_hours": null,
+      "synthesis_tokens": null,
+      "synthesis_API_dollars": null
+    },
+    "SENSE": {
+      "reference_number": 42,
+      "quantity_curve": "No fixed-mixture data-quantity curve identified; Figure 6 is mixture/presence analysis",
+      "hardware": "8 A100 GPUs",
+      "synthesis_elapsed_time": null,
+      "synthesis_tokens": null,
+      "synthesis_API_dollars": null
+    }
+  },
+  "Spider2_bounded_search": {
+    "date": "2026-10-15",
+    "queries": [
+      "Spider 2.0 3B SQL",
+      "Spider2.0-SQLite 1.5B"
+    ],
+    "primary_scope": [
+      "Cited Spider2 official paper and project",
+      "OmniSQL Table 4/PDF and paper-linked repository",
+      "Meta-Tool Findings ACL 2026 PDF"
+    ],
+    "OmniSQL": "135 SQLite tasks; Table 4 begins at DeepSeek-Coder-6.7B; no sub-4B row",
+    "MetaTool": {
+      "reference_number": 23,
+      "source": {
+        "file": "metatool_2026.findings-acl.492.pdf",
+        "url": "https://aclanthology.org/2026.findings-acl.492.pdf",
+        "bytes": 291892,
+        "pages": 16,
+        "sha256": "2faabc2f71add33511c250f4f80984c475ff8c68f9ccd603a607cf0473ae1fb8",
+        "reference_number": 23,
+        "version": "publisher primary PDF"
+      },
+      "sample_size": 50,
+      "few_shot_Llama3_2_3B_SR": 62,
+      "with_documentation_SR": 64,
+      "official_full_SQLite_Lite_result": false,
+      "reason": "Selected enterprise tasks; task-ID/version mapping to full official SQLite/Lite not established by checked PDF"
+    },
+    "conclusion": "No verified sub-4B full official SQLite/Lite score within this stated scope; selected 50-task result reported separately"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-15",
-  "scope": "Initial primary-source verification for the major revision; broader manuscript revision remains active.",
+  "scope": "Primary-source extraction supporting the October update-task list; S2 is the authoritative full Table 9 inventory.",
   "sources": {
     "C": {
       "title": "CodeS",
@@ -72,6 +72,42 @@
       "url": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
       "location": "Section 2 Model Downloads",
       "note": "V2-Lite has 16B total and 2.4B active parameters; total parameters control this survey cutoff."
+    },
+    "G": {
+      "file": "graphix_aaai2023.pdf",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26536/26308",
+      "bytes": 463009,
+      "pages": 9,
+      "sha256": "9614544f15d282d18f6fce8491ff87527e6c991876d7e154b20f965c25e1647f",
+      "reference_number": 36,
+      "version": "publisher primary PDF"
+    },
+    "RA": {
+      "file": "rasat_2022.emnlp-main.211.pdf",
+      "url": "https://aclanthology.org/2022.emnlp-main.211.pdf",
+      "bytes": 719148,
+      "pages": 15,
+      "sha256": "724a28f1d394d2a56afb2e5ec89f80ecf1572cf9792088bfcffaa25e98cfd130",
+      "reference_number": 20,
+      "version": "publisher primary PDF"
+    },
+    "T5": {
+      "file": "t5_raffel_jmlr2020.pdf",
+      "url": "https://www.jmlr.org/papers/volume21/20-074/20-074.pdf",
+      "bytes": 873534,
+      "pages": 67,
+      "sha256": "66cf9f77e46691853703eb6982dea337a53361d509fb99be719b5410c5467e41",
+      "reference_number": 60,
+      "version": "publisher primary PDF"
+    },
+    "MT": {
+      "file": "metatool_2026.findings-acl.492.pdf",
+      "url": "https://aclanthology.org/2026.findings-acl.492.pdf",
+      "bytes": 291892,
+      "pages": 16,
+      "sha256": "2faabc2f71add33511c250f4f80984c475ff8c68f9ccd603a607cf0473ae1fb8",
+      "reference_number": 23,
+      "version": "publisher primary PDF"
     }
   },
   "raw": {
@@ -287,7 +323,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-1B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-1-bird_ex_no_ek",
@@ -304,7 +342,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-1B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-1-bird_ex_ek",
@@ -321,7 +361,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-1B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-SFT-1-bird_ex_no_ek",
@@ -338,7 +380,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-SFT-1-bird_ex_ek",
@@ -355,7 +399,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-PT-3-spider_ts",
@@ -372,7 +418,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-3B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-3-bird_ex_no_ek",
@@ -389,7 +437,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-3B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-3-bird_ex_ek",
@@ -406,7 +456,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-3B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-SFT-3-bird_ex_no_ek",
@@ -423,7 +475,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-SFT-3-bird_ex_ek",
@@ -440,7 +494,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-PT-7-spider_ts",
@@ -457,7 +513,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-7B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-7-bird_ex_no_ek",
@@ -474,7 +532,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-7B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-7-bird_ex_ek",
@@ -491,7 +551,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoderBase-7B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-SFT-7-bird_ex_no_ek",
@@ -508,7 +570,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-SFT-7-bird_ex_ek",
@@ -525,7 +589,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-PT-15-spider_ts",
@@ -542,7 +608,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoder-15B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-15-bird_ex_no_ek",
@@ -559,7 +627,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoder-15B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-PT-15-bird_ex_ek",
@@ -576,7 +646,9 @@
       "conditions": "3-shot; common prompt framework; parent=StarCoder-15B; beam width 4; first executable; architecture differs across sizes",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4, PDF p11"
     },
     {
       "id": "C-SFT-15-bird_ex_no_ek",
@@ -593,7 +665,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "C-SFT-15-bird_ex_ek",
@@ -610,7 +684,9 @@
       "conditions": "Same CodeS family and benchmark split; prompting and retrieval budgets change (ICL top5 tables/top6 columns vs SFT top6/top10).",
       "comparison": "Bundled deployment comparison; not a pure SFT-only ablation",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 12,
+      "source_location": "Table 4 and 6, PDF p11"
     },
     {
       "id": "X-DeepSeek-Coder-V2-Lite-MT",
@@ -627,7 +703,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-DeepSeek-Coder-V2-Lite-BASE",
@@ -644,7 +722,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Qwen2.5-Coder-7B-MT",
@@ -661,7 +741,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Qwen2.5-Coder-7B-BASE",
@@ -678,7 +760,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Qwen2.5-Coder-14B-MT",
@@ -695,7 +779,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Qwen2.5-Coder-14B-BASE",
@@ -712,7 +798,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Codestral-22B-MT",
@@ -729,7 +817,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Codestral-22B-BASE",
@@ -746,7 +836,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Qwen2.5-Coder-32B-MT",
@@ -763,7 +855,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "X-Qwen2.5-Coder-32B-BASE",
@@ -780,7 +874,9 @@
       "conditions": "Single-generator evaluation; excludes schema linking and self-refine; all base models are instruct versions.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 37,
+      "source_location": "Table VI, PDF p8"
     },
     {
       "id": "R-3-SFT",
@@ -797,7 +893,9 @@
       "conditions": "Gemini-1.5-Pro-002 schema linker; supplied hints in App.A.3; generator comparison, not CHASE-SQL headline pipeline.",
       "comparison": "Within-study training-arm comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-3-RL",
@@ -814,7 +912,9 @@
       "conditions": "Gemini-1.5-Pro-002 schema linker; supplied hints in App.A.3; generator comparison, not CHASE-SQL headline pipeline.",
       "comparison": "Alternative training arms, not sequential SFT then RL",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-3-RL-FS",
@@ -831,7 +931,9 @@
       "conditions": "Correct/ground-truth schema provided; Table 2 values retained. Do not mix with ordinary EX.",
       "comparison": "Alternative training arms; oracle-schema diagnostic",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-7-SFT",
@@ -848,7 +950,9 @@
       "conditions": "Gemini-1.5-Pro-002 schema linker; supplied hints in App.A.3; generator comparison, not CHASE-SQL headline pipeline.",
       "comparison": "Within-study training-arm comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-7-RL",
@@ -865,7 +969,9 @@
       "conditions": "Gemini-1.5-Pro-002 schema linker; supplied hints in App.A.3; generator comparison, not CHASE-SQL headline pipeline.",
       "comparison": "Alternative training arms, not sequential SFT then RL",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-7-RL-FS",
@@ -882,7 +988,9 @@
       "conditions": "Correct/ground-truth schema provided; Table 2 values retained. Do not mix with ordinary EX.",
       "comparison": "Alternative training arms; oracle-schema diagnostic",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-14-SFT",
@@ -899,7 +1007,9 @@
       "conditions": "Gemini-1.5-Pro-002 schema linker; supplied hints in App.A.3; generator comparison, not CHASE-SQL headline pipeline.",
       "comparison": "Within-study training-arm comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-14-RL",
@@ -916,7 +1026,9 @@
       "conditions": "Gemini-1.5-Pro-002 schema linker; supplied hints in App.A.3; generator comparison, not CHASE-SQL headline pipeline.",
       "comparison": "Alternative training arms, not sequential SFT then RL",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "R-14-RL-FS",
@@ -933,7 +1045,9 @@
       "conditions": "Correct/ground-truth schema provided; Table 2 values retained. Do not mix with ordinary EX.",
       "comparison": "Alternative training arms; oracle-schema diagnostic",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 14,
+      "source_location": "Table 2, PDF p8"
     },
     {
       "id": "P-T5-Base-ex",
@@ -950,7 +1064,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; without DB content.",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-Base-em",
@@ -967,7 +1083,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; without DB content.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-Large-ex",
@@ -984,7 +1102,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; without DB content.",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-Large-em",
@@ -1001,7 +1121,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; without DB content.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-3B-ex",
@@ -1018,7 +1140,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; without DB content.",
       "comparison": "within-study matched comparison",
       "main_table": true,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-3B-em",
@@ -1035,7 +1159,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; without DB content.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-3B + DB content-ex",
@@ -1052,7 +1178,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; with DB content.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-T5-3B + DB content-em",
@@ -1069,7 +1197,9 @@
       "conditions": "Beam width 4; top-2 token predictions per hypothesis; parsing with guards; with DB content.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 1, PDF p5"
     },
     {
       "id": "P-CoSQL-QM",
@@ -1086,7 +1216,9 @@
       "conditions": "Beam 4, top2 tokens, dialog SQL state tracking; QM is exact-set match, not EX.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 2, PDF p5"
     },
     {
       "id": "P-CoSQL-IM",
@@ -1103,10 +1235,568 @@
       "conditions": "Beam 4, top2 tokens; IM is joint interaction match, not EX.",
       "comparison": "within-study matched comparison",
       "main_table": false,
-      "verification": "PDF table and contextual methods visually checked"
+      "verification": "PDF table and contextual methods visually checked",
+      "source_reference": 21,
+      "source_location": "Table 2, PDF p5"
+    },
+    {
+      "id": "G-Large-spider_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "Same metric/PICARD status; published T5 baseline; beam and total compute not matched",
+      "method": "Graphix relational layers, no PICARD",
+      "model": "T5-Large",
+      "metric": "spider_em",
+      "baseline": 67.0,
+      "result": 72.7,
+      "gain_pp": 5.7,
+      "main_table": false
+    },
+    {
+      "id": "G-Large-spider_ex",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "Same metric/PICARD status; published T5 baseline; beam and total compute not matched",
+      "method": "Graphix relational layers, no PICARD",
+      "model": "T5-Large",
+      "metric": "spider_ex",
+      "baseline": 69.3,
+      "result": 75.9,
+      "gain_pp": 6.6,
+      "main_table": true
+    },
+    {
+      "id": "GP-Large-spider_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "PICARD in both; beam/count NR; not a matched-compute causal ablation",
+      "method": "Graphix relational layers, with PICARD",
+      "model": "T5-Large",
+      "metric": "spider_em",
+      "baseline": 69.1,
+      "result": 76.6,
+      "gain_pp": 7.5,
+      "main_table": false
+    },
+    {
+      "id": "GP-Large-spider_ex",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "PICARD in both; beam/count NR; not a matched-compute causal ablation",
+      "method": "Graphix relational layers, with PICARD",
+      "model": "T5-Large",
+      "metric": "spider_ex",
+      "baseline": 72.9,
+      "result": 80.5,
+      "gain_pp": 7.6,
+      "main_table": false
+    },
+    {
+      "id": "G-3B-spider_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "Same metric/PICARD status; published T5 baseline; beam and total compute not matched",
+      "method": "Graphix relational layers, no PICARD",
+      "model": "T5-3B",
+      "metric": "spider_em",
+      "baseline": 71.5,
+      "result": 75.6,
+      "gain_pp": 4.1,
+      "main_table": false
+    },
+    {
+      "id": "G-3B-spider_ex",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "Same metric/PICARD status; published T5 baseline; beam and total compute not matched",
+      "method": "Graphix relational layers, no PICARD",
+      "model": "T5-3B",
+      "metric": "spider_ex",
+      "baseline": 74.4,
+      "result": 78.2,
+      "gain_pp": 3.8,
+      "main_table": true
+    },
+    {
+      "id": "GP-3B-spider_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "PICARD in both; beam/count NR; not a matched-compute causal ablation",
+      "method": "Graphix relational layers, with PICARD",
+      "model": "T5-3B",
+      "metric": "spider_em",
+      "baseline": 75.5,
+      "result": 77.1,
+      "gain_pp": 1.6,
+      "main_table": false
+    },
+    {
+      "id": "GP-3B-spider_ex",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 1, PDF p5",
+      "conditions": "PICARD in both; beam/count NR; not a matched-compute causal ablation",
+      "method": "Graphix relational layers, with PICARD",
+      "model": "T5-3B",
+      "metric": "spider_ex",
+      "baseline": 79.3,
+      "result": 81.0,
+      "gain_pp": 1.7,
+      "main_table": false
+    },
+    {
+      "id": "G-spider_syn_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 2, PDF p5",
+      "conditions": "No training on robustness variants; EM, not EX",
+      "method": "Graphix relations, robustness",
+      "model": "T5-3B",
+      "metric": "spider_syn_em",
+      "baseline": 58,
+      "result": 66.9,
+      "gain_pp": 8.9,
+      "main_table": false
+    },
+    {
+      "id": "G-spider_dk_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 2, PDF p5",
+      "conditions": "No training on robustness variants; EM, not EX",
+      "method": "Graphix relations, robustness",
+      "model": "T5-3B",
+      "metric": "spider_dk_em",
+      "baseline": 46.9,
+      "result": 51.2,
+      "gain_pp": 4.3,
+      "main_table": false
+    },
+    {
+      "id": "G-spider_realistic_em",
+      "source": 59,
+      "source_reference": 36,
+      "source_location": "Table 2, PDF p5",
+      "conditions": "No training on robustness variants; EM, not EX",
+      "method": "Graphix relations, robustness",
+      "model": "T5-3B",
+      "metric": "spider_realistic_em",
+      "baseline": 62,
+      "result": 72.4,
+      "gain_pp": 10.4,
+      "main_table": false
+    },
+    {
+      "id": "RA-Small-spider_em",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-Small",
+      "metric": "spider_em",
+      "baseline": 47.2,
+      "result": 53,
+      "gain_pp": 5.8,
+      "main_table": false
+    },
+    {
+      "id": "RA-Small-spider_ex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-Small",
+      "metric": "spider_ex",
+      "baseline": 47.8,
+      "result": 53.7,
+      "gain_pp": 5.9,
+      "main_table": true
+    },
+    {
+      "id": "RA-Base-spider_em",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-Base",
+      "metric": "spider_em",
+      "baseline": 57.2,
+      "result": 60.4,
+      "gain_pp": 3.2,
+      "main_table": false
+    },
+    {
+      "id": "RA-Base-spider_ex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-Base",
+      "metric": "spider_ex",
+      "baseline": 57.9,
+      "result": 61.3,
+      "gain_pp": 3.4,
+      "main_table": true
+    },
+    {
+      "id": "RA-Large-spider_em",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-Large",
+      "metric": "spider_em",
+      "baseline": 65.3,
+      "result": 66.7,
+      "gain_pp": 1.4,
+      "main_table": false
+    },
+    {
+      "id": "RA-Large-spider_ex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-Large",
+      "metric": "spider_ex",
+      "baseline": 67.2,
+      "result": 69.2,
+      "gain_pp": 2.0,
+      "main_table": true
+    },
+    {
+      "id": "RA-3B-spider_em",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-3B",
+      "metric": "spider_em",
+      "baseline": 71.5,
+      "result": 72.6,
+      "gain_pp": 1.1,
+      "main_table": false
+    },
+    {
+      "id": "RA-3B-spider_ex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 8, PDF p8",
+      "conditions": "Published T5 baseline; RASAT beam 8; no matched total compute",
+      "method": "RASAT relational attention, no PICARD",
+      "model": "T5-3B",
+      "metric": "spider_ex",
+      "baseline": 74.4,
+      "result": 76.6,
+      "gain_pp": 2.2,
+      "main_table": true
+    },
+    {
+      "id": "RA-P-sparc-qem",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 2, PDF p6",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "sparc_dev_qem",
+      "baseline": 65,
+      "result": 67.7,
+      "gain_pp": 2.7,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-sparc-iem",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 2, PDF p6",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "sparc_dev_iem",
+      "baseline": 45.7,
+      "result": 49.1,
+      "gain_pp": 3.4,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-sparc-qex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 2, PDF p6",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "sparc_dev_qex",
+      "baseline": 69.9,
+      "result": 73.3,
+      "gain_pp": 3.4,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-sparc-iex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 2, PDF p6",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "sparc_dev_iex",
+      "baseline": 50.7,
+      "result": 54,
+      "gain_pp": 3.3,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-cosql-qem",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 4, PDF p7",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "cosql_dev_qem",
+      "baseline": 56.2,
+      "result": 58.8,
+      "gain_pp": 2.6,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-cosql-iem",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 4, PDF p7",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "cosql_dev_iem",
+      "baseline": 25.9,
+      "result": 27,
+      "gain_pp": 1.1,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-cosql-qex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 4, PDF p7",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "cosql_dev_qex",
+      "baseline": 63.8,
+      "result": 67,
+      "gain_pp": 3.2,
+      "main_table": false
+    },
+    {
+      "id": "RA-P-cosql-iex",
+      "source": 60,
+      "source_reference": 20,
+      "source_location": "Table 4, PDF p7",
+      "conditions": "Beam 8; PICARD guards/top-2 checking; dialogue metric is not single-turn EX",
+      "method": "RASAT plus PICARD",
+      "model": "RASAT-3B",
+      "metric": "cosql_dev_iex",
+      "baseline": 34.8,
+      "result": 39.6,
+      "gain_pp": 4.8,
+      "main_table": false
+    },
+    {
+      "id": "M-1.5B",
+      "source": 42,
+      "source_reference": 46,
+      "source_location": "Table 2, PDF p6",
+      "conditions": "Full inference regime, more model/database calls; uncached search",
+      "method": "MCTS search vs single-shot",
+      "model": "Qwen2.5-Coder-1.5B",
+      "metric": "bird_ex",
+      "baseline": 14.71,
+      "result": 40.69,
+      "gain_pp": 25.98,
+      "main_table": false
+    },
+    {
+      "id": "M-3B",
+      "source": 42,
+      "source_reference": 46,
+      "source_location": "Table 2, PDF p6",
+      "conditions": "Full inference regime, more model/database calls; uncached search",
+      "method": "MCTS search vs single-shot",
+      "model": "Qwen2.5-Coder-3B",
+      "metric": "bird_ex",
+      "baseline": 17.68,
+      "result": 46.71,
+      "gain_pp": 29.03,
+      "main_table": false
+    },
+    {
+      "id": "SE-DeepSeek-Coder-1.3B-bird_ex",
+      "source": 38,
+      "source_reference": 42,
+      "source_location": "Table 5, PDF p7",
+      "conditions": "Strong-data SFT; data amount, coverage and training bundled",
+      "method": "SENSE strong-data SFT vs untuned",
+      "model": "DeepSeek-Coder-1.3B",
+      "metric": "bird_ex",
+      "baseline": 22,
+      "result": 40.7,
+      "gain_pp": 18.7,
+      "main_table": false
+    },
+    {
+      "id": "SE-DeepSeek-Coder-1.3B-spider_ex",
+      "source": 38,
+      "source_reference": 42,
+      "source_location": "Table 5, PDF p7",
+      "conditions": "Strong-data SFT; data amount, coverage and training bundled",
+      "method": "SENSE strong-data SFT vs untuned",
+      "model": "DeepSeek-Coder-1.3B",
+      "metric": "spider_ex",
+      "baseline": 59.3,
+      "result": 79.1,
+      "gain_pp": 19.8,
+      "main_table": false
+    },
+    {
+      "id": "SE-Qwen-1.8B-bird_ex",
+      "source": 38,
+      "source_reference": 42,
+      "source_location": "Table 5, PDF p7",
+      "conditions": "Strong-data SFT; data amount, coverage and training bundled",
+      "method": "SENSE strong-data SFT vs untuned",
+      "model": "Qwen-1.8B",
+      "metric": "bird_ex",
+      "baseline": 13.2,
+      "result": 38.1,
+      "gain_pp": 24.9,
+      "main_table": false
+    },
+    {
+      "id": "SE-Qwen-1.8B-spider_ex",
+      "source": 38,
+      "source_reference": 42,
+      "source_location": "Table 5, PDF p7",
+      "conditions": "Strong-data SFT; data amount, coverage and training bundled",
+      "method": "SENSE strong-data SFT vs untuned",
+      "model": "Qwen-1.8B",
+      "metric": "spider_ex",
+      "baseline": 54.8,
+      "result": 76.2,
+      "gain_pp": 21.4,
+      "main_table": false
+    },
+    {
+      "id": "O-bird_ex",
+      "source": 51,
+      "source_reference": 22,
+      "source_location": "Table 5, PDF p11",
+      "conditions": "Greedy; larger-model contextual evidence; SQLite subset 135 tasks",
+      "method": "Add SynSQL-2.5M to CoT Spider+BIRD",
+      "model": "Qwen2.5-Coder-7B",
+      "metric": "bird_ex",
+      "baseline": 59.6,
+      "result": 63.9,
+      "gain_pp": 4.3,
+      "main_table": false
+    },
+    {
+      "id": "O-spider_ts",
+      "source": 51,
+      "source_reference": 22,
+      "source_location": "Table 5, PDF p11",
+      "conditions": "Greedy; larger-model contextual evidence; SQLite subset 135 tasks",
+      "method": "Add SynSQL-2.5M to CoT Spider+BIRD",
+      "model": "Qwen2.5-Coder-7B",
+      "metric": "spider_ts",
+      "baseline": 80.3,
+      "result": 81.2,
+      "gain_pp": 0.9,
+      "main_table": false
+    },
+    {
+      "id": "O-spider2_sqlite_ex",
+      "source": 51,
+      "source_reference": 22,
+      "source_location": "Table 5, PDF p11",
+      "conditions": "Greedy; larger-model contextual evidence; SQLite subset 135 tasks",
+      "method": "Add SynSQL-2.5M to CoT Spider+BIRD",
+      "model": "Qwen2.5-Coder-7B",
+      "metric": "spider2_sqlite_ex",
+      "baseline": 5.9,
+      "result": 10.4,
+      "gain_pp": 4.5,
+      "main_table": false
     }
   ],
-  "table9": [
+  "issues": [
+    {
+      "id": "V01",
+      "item": "Reasoning-SQL training interpretation",
+      "finding": "The abstract explicitly says RL-only. Delta(RL,SFT) is an arm contrast, not a proven incremental SFT-to-RL gain.",
+      "action": "Correct the earlier plan wording and all draft discussion."
+    },
+    {
+      "id": "V02",
+      "item": "Reasoning-SQL reward contrast",
+      "finding": "General EX: all minus exec+syntax=64.01-62.84=1.17 pp. FS EX:70.66-68.97=1.69 pp. General EX all minus exec-only=64.01-62.32=1.69 pp.",
+      "action": "State both metric and reward baseline; do not repeat approximately 1.7 for exec+syntax ordinary EX."
+    },
+    {
+      "id": "V03",
+      "item": "Reasoning-SQL Table 1 versus Table 2",
+      "finding": "7B direct-SFT FS EX is 69.23 in Table 1 but 68.12 in Table 2. Ordinary EX=61.53 agrees.",
+      "action": "Use Table 2 consistently for multi-size panel; flag inconsistency, do not combine cells from different tables."
+    },
+    {
+      "id": "V04",
+      "item": "PICARD TS versus EX",
+      "finding": "PICARD body reports TS=71.9; CodeS re-evaluation reports TS=69.4 for T5-3B+PICARD. EX=79.3 agrees.",
+      "action": "Table 9 reports primary EX; do not substitute or harmonize TS values."
+    },
+    {
+      "id": "V05",
+      "item": "FINER-SQL citation reuse",
+      "finding": "Its Table II labels BIRD 23.34 as T5-3B+PICARD, but CodeS Table 6 labels that number as fine-tuned T5-3B without a PICARD claim.",
+      "action": "Do not carry this BIRD cell into PICARD Table 9 row."
+    },
+    {
+      "id": "V06",
+      "item": "CodeS-15B parent",
+      "finding": "CodeS-15B is initialized from StarCoder-15B, while smaller versions use StarCoderBase. Using StarCoderBase-15B changes the pretraining deltas.",
+      "action": "Use the actual parent row and document the different warm start."
+    },
+    {
+      "id": "V07",
+      "item": "Publication status",
+      "finding": "XiYan-SQL has a TKDE April 2026 version. FINER-SQL has an ICDE 2026 publication record despite a preprint title on arXiv.",
+      "action": "Separate checked numerical version, archival status, and independent replication; update manuscript and appendix."
+    },
+    {
+      "id": "V08",
+      "item": "CodeS SFT versus 3-shot",
+      "finding": "CodeS-3B BIRD +EK rises from39.18 to55.02 (+15.84 pp), but SFT and ICL have different retrieval top-k budgets and demonstrations.",
+      "action": "Describe a full-regime comparison, not a controlled SFT-only effect."
+    }
+  ],
+  "missingness": "null means not reported or not established for this exact condition; never impute zero or one candidate.",
+  "verification": "Manual visual checks of PDF table pages plus arithmetic validation; these are author-reported results, not newly reproduced experiments.",
+  "legacy_table9_16": [
     {
       "id": "P3",
       "system": "T5-3B + PICARD",
@@ -1382,56 +2072,69 @@
       "notes": "Main-experiment default is n=30. Sensitivity optimum n=50 is not silently assigned to Table II. Training rollouts 32 are distinct."
     }
   ],
-  "issues": [
-    {
-      "id": "V01",
-      "item": "Reasoning-SQL training interpretation",
-      "finding": "The abstract explicitly says RL-only. Delta(RL,SFT) is an arm contrast, not a proven incremental SFT-to-RL gain.",
-      "action": "Correct the earlier plan wording and all draft discussion."
-    },
-    {
-      "id": "V02",
-      "item": "Reasoning-SQL reward contrast",
-      "finding": "General EX: all minus exec+syntax=64.01-62.84=1.17 pp. FS EX:70.66-68.97=1.69 pp. General EX all minus exec-only=64.01-62.32=1.69 pp.",
-      "action": "State both metric and reward baseline; do not repeat approximately 1.7 for exec+syntax ordinary EX."
-    },
-    {
-      "id": "V03",
-      "item": "Reasoning-SQL Table 1 versus Table 2",
-      "finding": "7B direct-SFT FS EX is 69.23 in Table 1 but 68.12 in Table 2. Ordinary EX=61.53 agrees.",
-      "action": "Use Table 2 consistently for multi-size panel; flag inconsistency, do not combine cells from different tables."
-    },
-    {
-      "id": "V04",
-      "item": "PICARD TS versus EX",
-      "finding": "PICARD body reports TS=71.9; CodeS re-evaluation reports TS=69.4 for T5-3B+PICARD. EX=79.3 agrees.",
-      "action": "Table 9 reports primary EX; do not substitute or harmonize TS values."
-    },
-    {
-      "id": "V05",
-      "item": "FINER-SQL citation reuse",
-      "finding": "Its Table II labels BIRD 23.34 as T5-3B+PICARD, but CodeS Table 6 labels that number as fine-tuned T5-3B without a PICARD claim.",
-      "action": "Do not carry this BIRD cell into PICARD Table 9 row."
-    },
-    {
-      "id": "V06",
-      "item": "CodeS-15B parent",
-      "finding": "CodeS-15B is initialized from StarCoder-15B, while smaller versions use StarCoderBase. Using StarCoderBase-15B changes the pretraining deltas.",
-      "action": "Use the actual parent row and document the different warm start."
-    },
-    {
-      "id": "V07",
-      "item": "Publication status",
-      "finding": "XiYan-SQL has a TKDE April 2026 version. FINER-SQL has an ICDE 2026 publication record despite a preprint title on arXiv.",
-      "action": "Separate checked numerical version, archival status, and independent replication; update manuscript and appendix."
-    },
-    {
-      "id": "V08",
-      "item": "CodeS SFT versus 3-shot",
-      "finding": "CodeS-3B BIRD +EK rises from39.18 to55.02 (+15.84 pp), but SFT and ICL have different retrieval top-k budgets and demonstrations.",
-      "action": "Describe a full-regime comparison, not a controlled SFT-only effect."
-    }
-  ],
-  "missingness": "null means not reported or not established for this exact condition; never impute zero or one candidate.",
-  "verification": "Manual visual checks of PDF table pages plus arithmetic validation; these are author-reported results, not newly reproduced experiments."
+  "table9_authoritative_file": "compact_configurations.csv",
+  "table9_configurations": 37,
+  "current_reference_map": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": 11,
+    "12": 12,
+    "13": 13,
+    "14": 14,
+    "15": 15,
+    "16": 16,
+    "17": 17,
+    "18": 18,
+    "19": 19,
+    "60": 20,
+    "20": 21,
+    "51": 22,
+    "62": 23,
+    "21": 24,
+    "22": 25,
+    "23": 26,
+    "24": 27,
+    "25": 28,
+    "26": 29,
+    "27": 30,
+    "28": 31,
+    "29": 32,
+    "30": 33,
+    "31": 34,
+    "32": 35,
+    "59": 36,
+    "33": 37,
+    "34": 38,
+    "35": 39,
+    "36": 40,
+    "37": 41,
+    "38": 42,
+    "39": 43,
+    "40": 44,
+    "41": 45,
+    "42": 46,
+    "43": 47,
+    "44": 48,
+    "45": 49,
+    "46": 50,
+    "47": 51,
+    "48": 52,
+    "49": 53,
+    "50": 54,
+    "52": 55,
+    "53": 56,
+    "54": 57,
+    "55": 58,
+    "56": 59,
+    "61": 60,
+    "58": 61
+  }
 }

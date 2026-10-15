@@ -1,37 +1,34 @@
-DATA DICTIONARY
+DATA DICTIONARY - 15 October 2026
 
-S1 scale_effects_49_contrasts.csv
-method: intervention and its comparison baseline.
-model: evaluated generator and nominal size.
-metric: spider_ts, spider_ex, spider_em, bird_ex, bird_ex_no_ek, bird_ex_ek,
-  bird_fs_ex (correct-schema diagnostic), cosql_dev_qm or cosql_dev_im.
-  CoSQL QM measures questions; IM measures complete interactions. They are not EX.
-baseline/result: reported percentage endpoints under the documented condition.
-gain_pp: result minus baseline in percentage points, not relative percent change.
-main_table: True for the 16 main Table 4 contrasts; False for supplementary ones.
+S1 scale_effects.csv
+method/model: the source-reported intervention, comparison and generator.
+metric: named dataset/split and source metric. spider_ts is test-suite accuracy;
+spider_em and robustness *_em are exact match; *_ex is execution. *_qem/iem
+are question/interaction match; *_qex/iex are question/interaction execution.
+baseline/result: reported percentage endpoints; gain_pp: result minus baseline.
+main_table: True for 22 main Table 4 contrasts, False for other contrasts.
+source_reference: CURRENT manuscript reference number, not the stable S4 tag.
+source_location/conditions: primary table/page, input/search and comparison
+scope. Legacy source tags and original extraction details remain in S4.
 
-S2 compact_configurations_24.csv
-system_generator: exact generator/training/retrieval condition in Table 9.
-BIRD_dev_EX: reported development execution accuracy; paired values retain
-  no-EK / with-EK order. NR means the exact condition was not established.
-Spider_dev_EX: reported Spider development execution accuracy; NR is retained
-  for TS-only, test-only or otherwise unavailable development EX.
-inference_search_auxiliaries: beams, SQL samples, rollouts, revision limits and
-  online helper modules. NR and adaptive counts are intentionally preserved.
-numerical_source_venue: citation number, source table and version/venue note.
-Some cells preserve LaTeX-style scholarly notation from the manuscript.
+S2 compact_configurations.csv
+system_generator: exact Table 9 training/retrieval/sampling configuration.
+BIRD_dev_EX: development execution accuracy; CodeS pairs retain no-EK / with-EK.
+Spider_dev_EX: development execution accuracy, never TS, dialogue or test EX.
+inference_search_auxiliaries: beam, samples, revision/search and online helpers.
+numerical_source_venue: CURRENT manuscript citation, table and source version.
+NR means the exact value/condition was not established. No imputation.
 
-S3 source_manifest.json
-file/url: pinned numerical source artifact and public retrieval URL.
-bytes/pages/sha256: exact retrieved PDF identity; these are provenance records,
-  not embedded third-party files or claims of reproduction.
+S3 source_manifest.json: URL/file/bytes/pages/SHA256 identify the retrieved primary
+PDF artifact. These records are provenance, not redistribution of those PDFs.
 
-S4/S5
-Raw author-reported endpoints and conditional extraction notes. Stable source
-tags in S4 are distinct from renumbered journal reference IDs; use S6 to trace
-earlier working reference numbers. Missingness must not be imputed.
+S4/S5: raw source-reported endpoints, conditions, scope and unresolved source
+issues. The legacy 16-condition S4 subset is explicitly historical; use S2 for
+the current 37-condition inventory. Offline synthesis and student training costs
+are different quantities. Figure trends without exact labels are not digitized.
 
-S6
-old_to_new: earlier working citation number to final first-appearance number.
-current_references: bibliographic entries and original working IDs, not new
-numerical evaluations.
+S6 current_references: current first-appearance reference number to bibliography.
+old_to_new: original working IDs that still refer to retained source identities.
+previous_release_to_current: immediately previous manuscript number to current.
+retired_references: source removed when size attribution was corrected. Newly
+added papers do not inherit the identity of the removed secondary citation.
